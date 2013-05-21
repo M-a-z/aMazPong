@@ -1,0 +1,80 @@
+So you're one of those who can't resist taking a peek, huh? =)
+
+Anyways, now that you bothered opening this file, you might as well read this.
+
+File Contents:
+
+1. Launching
+2. Compiling
+3. What is this thing?
+4. Misc issues.
+5. I want to participate!
+
+
+1. Launching game:
+On Windows you need to copy the freeglut.dll from freeglut/bin/ folder to folder where server and client executables are located. (by default to client and server folders). You can also copy freeglut.dll to your system folder, but I do not recommend that because you may have conflicting glut implementation already installed.
+Server:
+    Server can be launched just by launching the executable. That is:
+    Windows: pongServer.exe or pongServer_crosscompiled.exe 
+    Linux: pongServer (needs to be compiled)
+Client:
+Client can be launched by launching exe, and specifying parameters:
+    -p<num> - amount of player. One and only one client / game should specify this parameter. If you just want to test things out, you can launch server, and then one client with -p1
+    -v Display version and exit
+    -h display other parameters and exit. (Yep, there is other params too. Later if this appears to be a working game, those will be needed)
+client exe is:
+Windows: pongClient.exe or pongClient_crosscompiled.exe
+Linux:   pongClient (needs to be compiled)
+
+
+
+2. Compiling:
+Linux: 
+You need glut / openGL implementations. Here's list of packages and install commands for different distributions:
+Fedora (16):    Packages: mesa-libGL, freeglut                  Command: yum install freeglut mesa-libGL
+Ubuntu:         TBD                                             TBD
+Debian          TBD                                             TBD
+
+After these requirements are filled, you should be able to compile using make and gcc:
+Build client by commands:
+cd client
+make
+
+Build server by commands:
+cd server
+make
+
+After this you should be able to start server and client executables as explained in step 1.
+
+Windows:
+NOTE: There is compiled binaries for x86 machine included. You need to compile sources by yourself only if you want to do changes to source code. See 1.
+You need MinGW (Minimal Gnu For Windows) toolchain providing gcc and libraries. Freeglut headers and dll are included in this pong package.After getting MinGW compiler and libraries (from http://www.mingw.org/) you should ensure make and gcc provided in MinGW package can be found by the system. (eg, typing gcc --version and make --version in command prompt displays gcc and make versions, not some "command not found" error.) This can be achieved by adding location where make.exe and gcc.exe are stored into path environment variable).
+
+After this is done, you should be able to compile exes by writing commands
+cd client
+make win
+
+and 
+
+cd server
+make win
+
+to command prompt.
+
+3. What is this thing?
+This thing is my hobby project - A.K.A foreverlasting pong project. Started at 2006(?) and aiming to be a pong game. It has been written and forgotten and rewritten so many times now, that ... well, I hardly remember how this all started =) However after a few years of hiatus, I revived this project again =) 
+
+4. Misc issues.
+At the moment (version 0.000001 - Eg. still a version before any released tags) this is just starting to get shape. It nowadays aims to be a multiplayer game playable over network. Current development status is:
+    - Server and client can do some handshaking. 
+    (although there is severe issues like messing server by sending unexpected messages, 
+    server not doing game cleanup when client(s) exit, etc)
+    - Client can bring up a window and draws the ball at initial position.
+    - Windows version just exits - I've not digged the reason for this.
+
+
+5. I want to participate!
+Good. You can either see the sources, jump in and start doing things && contact me to negotiate getting changes in or ask me if I have something for you to do. For example, I do want to have a windows version of this game. However I am not usually doing things with windows. I try compiling for windows on Linux host with MinGW cross-compiler - and even occasionally I do windows compilation using MinGW on windows host. However if anyone want's to find out why some things fail on windows, test windows compilations, or want to point out/correct windows specific problems (like the current problem described in 4.) - I am more than pleased to receive help on that. 
+
+
+

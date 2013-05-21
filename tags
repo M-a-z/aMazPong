@@ -1,0 +1,917 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BACKLOG	server/pong_server_accept_client.h	37;"	d
+BALLS_MAX	common/definitions.h	73;"	d
+BALL_COLOUR_DEFAULT	common/definitions.h	124;"	d
+BalldataArray	common/pong_dataStorage.h	/^    SBallData BalldataArray[BALLS_MAX];$/;"	m	struct:SClientGameData
+CC	client/Makefile	/^CC = gcc$/;"	m
+CC	server/Makefile	/^CC = gcc$/;"	m
+CLIENTS_MAX	common/definitions.h	71;"	d
+CLOCK_REALTIME	common/pong_misc_func.h	31;"	d
+CONN_MAX_EXCEED_MSG_SIZE	server/pong_server_accept_client.h	39;"	d
+CONN_MAX_EXEED	server/pong_server_accept_client.h	38;"	d
+C_FLAGS	client/Makefile	/^C_FLAGS = -Wall -ggdb -I ..\/common\/$/;"	m
+C_FLAGS	server/Makefile	/^C_FLAGS = -Wall -ggdb -I ..\/common\/$/;"	m
+C_SRC	client/Makefile	/^C_SRC =  pong_client_queue.c pong_client_netwIF.c pong_client_starter.c pong_drawer.c drawable_text.c  movable_item.c drawable_balls.c drawable_paddles.c drawable_walls.c ..\/common\/pong_dataStorage.c ..\/common\/pong_IdFifo.c ..\/common\/pong_misc_func.c ..\/common\/pong_netw.c ..\/common\/pong_queue.c$/;"	m
+C_SRC	server/Makefile	/^C_SRC =  place_counter_thread.c pong_server_accept_client.c serverStartup.c pong_server_queue.c ..\/common\/pong_dataStorage.c ..\/common\/pong_IdFifo.c ..\/common\/pong_misc_func.c ..\/common\/pong_netw.c ..\/common\/pong_queue.c $/;"	m
+DBGPRINT	common/pong_netw.c	24;"	d	file:
+DEBUG	common/definitions.h	24;"	d
+DEBUGPRINT	common/definitions.h	46;"	d
+DEBUGPRINT	common/definitions.h	48;"	d
+DEFAULT_AREA_HEIGHT	common/definitions.h	94;"	d
+DEFAULT_AREA_WIDTH	common/definitions.h	93;"	d
+DEFAULT_BALL_MIN_VELOCITY	common/definitions.h	100;"	d
+DEFAULT_BALL_START_MAX_VELOCITY	common/definitions.h	101;"	d
+DEFAULT_PLATES_START_MAX_VELOCITY	common/definitions.h	116;"	d
+DEFAULT_PLATE_START_MIN_VELOCITY	common/definitions.h	117;"	d
+DEFINES	client/Makefile	/^DEFINES = -D__LINUX__$/;"	m
+DEFINES	server/Makefile	/^DEFINES = -D__LINUX__$/;"	m
+DEFINITIONS_H	common/definitions.h	22;"	d
+DINIT_PLAYER_DATA_STORAGE	common/definitions.h	161;"	d
+DKEY_QUIT1	common/definitions.h	153;"	d
+DKEY_QUIT2	common/definitions.h	154;"	d
+DPLAYER1_KEY_DOWN	common/definitions.h	151;"	d
+DPLAYER1_KEY_UP	common/definitions.h	149;"	d
+DPLAYER2_KEY_DOWN	common/definitions.h	152;"	d
+DPLAYER2_KEY_UP	common/definitions.h	150;"	d
+DPLAYER_DATA_QUERY	common/definitions.h	160;"	d
+DPLAYER_KEYPRESS	common/definitions.h	157;"	d
+DPLAYER_PLATE_QUERY	common/definitions.h	158;"	d
+DPLAYER_SPECIALS_QUERY	common/definitions.h	159;"	d
+DUPDATE_PLATE	common/definitions.h	163;"	d
+DUPDATE_PLAYER	common/definitions.h	165;"	d
+DUPDATE_SPECIALS	common/definitions.h	164;"	d
+D_DIRECTION_DOWN	common/definitions.h	142;"	d
+D_DIRECTION_LEFT	common/definitions.h	144;"	d
+D_DIRECTION_RIGHT	common/definitions.h	145;"	d
+D_DIRECTION_STANDBY	common/definitions.h	143;"	d
+D_DIRECTION_UP	common/definitions.h	141;"	d
+D_MAX_PLAYER	common/definitions.h	155;"	d
+D_PLAYER_LIVES	common/definitions.h	139;"	d
+EGameType	server/serverStartup.h	/^typedef enum EGameType$/;"	g
+EGameType	server/serverStartup.h	/^}EGameType;$/;"	t	typeref:enum:EGameType
+EGameType_Invalid	server/serverStartup.h	/^    EGameType_Invalid$/;"	e	enum:EGameType
+EGameType_Normal	server/serverStartup.h	/^    EGameType_Normal = 0,$/;"	e	enum:EGameType
+EPongRecvRet	common/pong_netw.h	/^typedef enum EPongRecvRet$/;"	g
+EPongRecvRet	common/pong_netw.h	/^}EPongRecvRet;$/;"	t	typeref:enum:EPongRecvRet
+EPongRecvRet_EAGAIN	common/pong_netw.h	/^    EPongRecvRet_EAGAIN = 3$/;"	e	enum:EPongRecvRet
+EPongRecvRet_ERROR	common/pong_netw.h	/^    EPongRecvRet_ERROR = 0,$/;"	e	enum:EPongRecvRet
+EPongRecvRet_SUCCESS	common/pong_netw.h	/^    EPongRecvRet_SUCCESS = 1,$/;"	e	enum:EPongRecvRet
+EPongRet	common/definitions.h	/^typedef enum EPongRet$/;"	g
+EPongRet	common/definitions.h	/^}EPongRet;$/;"	t	typeref:enum:EPongRet
+EPongRet_ERROR	common/definitions.h	/^    EPongRet_ERROR = 0,$/;"	e	enum:EPongRet
+EPongRet_SUCCESS	common/definitions.h	/^    EPongRet_SUCCESS = 1$/;"	e	enum:EPongRet
+ERROR_TOLERANCE	common/definitions.h	79;"	d
+EWOULDBLOCK	common/pong_netw.h	30;"	d
+EWallPosition	common/pong_dataStorage.h	/^typedef enum EWallPosition$/;"	g
+EWallPosition	common/pong_dataStorage.h	/^}EWallPosition;$/;"	t	typeref:enum:EWallPosition
+EWallPosition_Bottom	common/pong_dataStorage.h	/^    EWallPosition_Bottom = 3,$/;"	e	enum:EWallPosition
+EWallPosition_Left	common/pong_dataStorage.h	/^    EWallPosition_Left = 0,$/;"	e	enum:EWallPosition
+EWallPosition_NmbrOf	common/pong_dataStorage.h	/^    EWallPosition_NmbrOf$/;"	e	enum:EWallPosition
+EWallPosition_Right	common/pong_dataStorage.h	/^    EWallPosition_Right = 1,$/;"	e	enum:EWallPosition
+EWallPosition_Up	common/pong_dataStorage.h	/^    EWallPosition_Up = 2,$/;"	e	enum:EWallPosition
+EWallType	common/pong_dataStorage.h	/^typedef enum EWallType$/;"	g
+EWallType	common/pong_dataStorage.h	/^}EWallType;$/;"	t	typeref:enum:EWallType
+EWallType_NmbrOf	common/pong_dataStorage.h	/^    EWallType_NmbrOf	$/;"	e	enum:EWallType
+EWallType_None	common/pong_dataStorage.h	/^    EWallType_None = 0,$/;"	e	enum:EWallType
+EWallType_Normal	common/pong_dataStorage.h	/^    EWallType_Normal = 1,$/;"	e	enum:EWallType
+Eboolean	common/definitions.h	/^typedef enum Eboolean { Efalse=0x0000,Etrue=0x0001,Einvalid_boolean } Eboolean;$/;"	g
+Eboolean	common/definitions.h	/^typedef enum Eboolean { Efalse=0x0000,Etrue=0x0001,Einvalid_boolean } Eboolean;$/;"	t	typeref:enum:Eboolean
+Efalse	common/definitions.h	/^typedef enum Eboolean { Efalse=0x0000,Etrue=0x0001,Einvalid_boolean } Eboolean;$/;"	e	enum:Eboolean
+Einvalid_boolean	common/definitions.h	/^typedef enum Eboolean { Efalse=0x0000,Etrue=0x0001,Einvalid_boolean } Eboolean;$/;"	e	enum:Eboolean
+EpongPollRetVal	common/pong_netw.h	/^typedef enum EpongPollRetVal$/;"	g
+EpongPollRetVal	common/pong_netw.h	/^}EpongPollRetVal;$/;"	t	typeref:enum:EpongPollRetVal
+EpongPollRetVal_Error	common/pong_netw.h	/^        EpongPollRetVal_Error = 0,$/;"	e	enum:EpongPollRetVal
+EpongPollRetVal_NewData	common/pong_netw.h	/^        EpongPollRetVal_NewData = 1,$/;"	e	enum:EpongPollRetVal
+EpongPollRetVal_NothingNew	common/pong_netw.h	/^        EpongPollRetVal_NothingNew = 2$/;"	e	enum:EpongPollRetVal
+Etrue	common/definitions.h	/^typedef enum Eboolean { Efalse=0x0000,Etrue=0x0001,Einvalid_boolean } Eboolean;$/;"	e	enum:Eboolean
+FGAPI	freeglut/include/GL/freeglut_std.h	106;"	d
+FGAPI	freeglut/include/GL/freeglut_std.h	68;"	d
+FGAPI	freeglut/include/GL/freeglut_std.h	81;"	d
+FGAPI	freeglut/include/GL/freeglut_std.h	83;"	d
+FGAPIENTRY	freeglut/include/GL/freeglut_std.h	107;"	d
+FGAPIENTRY	freeglut/include/GL/freeglut_std.h	69;"	d
+FGAPIENTRY	freeglut/include/GL/freeglut_std.h	79;"	d
+FGUNUSED	freeglut/include/GL/freeglut_std.h	608;"	d
+FGUNUSED	freeglut/include/GL/freeglut_std.h	610;"	d
+FHelloParse	server/pong_server_accept_client.h	/^typedef EPongRet (*FHelloParse)(void *opaque);$/;"	t
+FInitInfo	server/pong_server_accept_client.h	/^typedef void (*FInitInfo)(struct SConnectionInfo *info);$/;"	t
+FInitParse	server/pong_server_accept_client.h	/^typedef EPongRet (*FInitParse)(void *opaque);$/;"	t
+FJoinreqParse	server/pong_server_accept_client.h	/^typedef EPongRet (*FJoinreqParse)(void *opaque);$/;"	t
+FREEGLUT	freeglut/include/GL/freeglut_std.h	114;"	d
+FREEGLUT_LIB_PRAGMAS	freeglut/include/GL/freeglut_std.h	51;"	d
+FREEGLUT_LIB_PRAGMAS	freeglut/include/GL/freeglut_std.h	53;"	d
+FREEGLUT_VERSION_2_0	freeglut/include/GL/freeglut_std.h	116;"	d
+FUninitInfo	server/pong_server_accept_client.h	/^typedef void (*FUninitInfo)(struct SConnectionInfo *info);$/;"	t
+FdrawFunc	client/pong_drawer.h	/^typedef void (*FdrawFunc)(movable_item *mover, void *);$/;"	t
+FwaitAllJoinAndSend	server/pong_server_accept_client.h	/^typedef EPongRet (*FwaitAllJoinAndSend) (void *opaque);$/;"	t
+GAMES_MAX	common/definitions.h	72;"	d
+GAME_DATA_LOCK	common/pong_dataStorage.h	221;"	d
+GAME_DATA_UNLOCK	common/pong_dataStorage.h	222;"	d
+GAME_INIT_TMO	server/pong_server_accept_client.c	50;"	d	file:
+GAME_NAME_MAX	common/definitions.h	74;"	d
+GAME_READY_TMO	common/definitions.h	89;"	d
+GAME_TIME_QUANTA_MSEC	common/definitions.h	96;"	d
+GLUT_ACCUM	freeglut/include/GL/freeglut_std.h	169;"	d
+GLUT_ACTION_CONTINUE_EXECUTION	freeglut/include/GL/freeglut_ext.h	53;"	d
+GLUT_ACTION_EXIT	freeglut/include/GL/freeglut_ext.h	51;"	d
+GLUT_ACTION_GLUTMAINLOOP_RETURNS	freeglut/include/GL/freeglut_ext.h	52;"	d
+GLUT_ACTION_ON_WINDOW_CLOSE	freeglut/include/GL/freeglut_ext.h	74;"	d
+GLUT_ACTIVE_ALT	freeglut/include/GL/freeglut_std.h	329;"	d
+GLUT_ACTIVE_CTRL	freeglut/include/GL/freeglut_std.h	328;"	d
+GLUT_ACTIVE_SHIFT	freeglut/include/GL/freeglut_std.h	327;"	d
+GLUT_ALLOW_DIRECT_CONTEXT	freeglut/include/GL/freeglut_ext.h	65;"	d
+GLUT_ALPHA	freeglut/include/GL/freeglut_std.h	170;"	d
+GLUT_API_VERSION	freeglut/include/GL/freeglut_std.h	115;"	d
+GLUT_AUX	freeglut/include/GL/freeglut_ext.h	91;"	d
+GLUT_AUX1	freeglut/include/GL/freeglut_ext.h	93;"	d
+GLUT_AUX2	freeglut/include/GL/freeglut_ext.h	94;"	d
+GLUT_AUX3	freeglut/include/GL/freeglut_ext.h	95;"	d
+GLUT_AUX4	freeglut/include/GL/freeglut_ext.h	96;"	d
+GLUT_BITMAP_8_BY_13	freeglut/include/GL/freeglut_std.h	198;"	d
+GLUT_BITMAP_8_BY_13	freeglut/include/GL/freeglut_std.h	224;"	d
+GLUT_BITMAP_9_BY_15	freeglut/include/GL/freeglut_std.h	197;"	d
+GLUT_BITMAP_9_BY_15	freeglut/include/GL/freeglut_std.h	223;"	d
+GLUT_BITMAP_HELVETICA_10	freeglut/include/GL/freeglut_std.h	201;"	d
+GLUT_BITMAP_HELVETICA_10	freeglut/include/GL/freeglut_std.h	227;"	d
+GLUT_BITMAP_HELVETICA_12	freeglut/include/GL/freeglut_std.h	202;"	d
+GLUT_BITMAP_HELVETICA_12	freeglut/include/GL/freeglut_std.h	228;"	d
+GLUT_BITMAP_HELVETICA_18	freeglut/include/GL/freeglut_std.h	203;"	d
+GLUT_BITMAP_HELVETICA_18	freeglut/include/GL/freeglut_std.h	229;"	d
+GLUT_BITMAP_TIMES_ROMAN_10	freeglut/include/GL/freeglut_std.h	199;"	d
+GLUT_BITMAP_TIMES_ROMAN_10	freeglut/include/GL/freeglut_std.h	225;"	d
+GLUT_BITMAP_TIMES_ROMAN_24	freeglut/include/GL/freeglut_std.h	200;"	d
+GLUT_BITMAP_TIMES_ROMAN_24	freeglut/include/GL/freeglut_std.h	226;"	d
+GLUT_BLUE	freeglut/include/GL/freeglut_std.h	363;"	d
+GLUT_BORDERLESS	freeglut/include/GL/freeglut_ext.h	227;"	d
+GLUT_CAPTIONLESS	freeglut/include/GL/freeglut_ext.h	226;"	d
+GLUT_COMPATIBILITY_PROFILE	freeglut/include/GL/freeglut_ext.h	117;"	d
+GLUT_CORE_PROFILE	freeglut/include/GL/freeglut_ext.h	116;"	d
+GLUT_CREATE_NEW_CONTEXT	freeglut/include/GL/freeglut_ext.h	58;"	d
+GLUT_CURSOR_BOTTOM_LEFT_CORNER	freeglut/include/GL/freeglut_std.h	353;"	d
+GLUT_CURSOR_BOTTOM_RIGHT_CORNER	freeglut/include/GL/freeglut_std.h	352;"	d
+GLUT_CURSOR_BOTTOM_SIDE	freeglut/include/GL/freeglut_std.h	347;"	d
+GLUT_CURSOR_CROSSHAIR	freeglut/include/GL/freeglut_std.h	343;"	d
+GLUT_CURSOR_CYCLE	freeglut/include/GL/freeglut_std.h	339;"	d
+GLUT_CURSOR_DESTROY	freeglut/include/GL/freeglut_std.h	337;"	d
+GLUT_CURSOR_FULL_CROSSHAIR	freeglut/include/GL/freeglut_std.h	356;"	d
+GLUT_CURSOR_HELP	freeglut/include/GL/freeglut_std.h	338;"	d
+GLUT_CURSOR_INFO	freeglut/include/GL/freeglut_std.h	336;"	d
+GLUT_CURSOR_INHERIT	freeglut/include/GL/freeglut_std.h	354;"	d
+GLUT_CURSOR_LEFT_ARROW	freeglut/include/GL/freeglut_std.h	335;"	d
+GLUT_CURSOR_LEFT_RIGHT	freeglut/include/GL/freeglut_std.h	345;"	d
+GLUT_CURSOR_LEFT_SIDE	freeglut/include/GL/freeglut_std.h	348;"	d
+GLUT_CURSOR_NONE	freeglut/include/GL/freeglut_std.h	355;"	d
+GLUT_CURSOR_RIGHT_ARROW	freeglut/include/GL/freeglut_std.h	334;"	d
+GLUT_CURSOR_RIGHT_SIDE	freeglut/include/GL/freeglut_std.h	349;"	d
+GLUT_CURSOR_SPRAY	freeglut/include/GL/freeglut_std.h	340;"	d
+GLUT_CURSOR_TEXT	freeglut/include/GL/freeglut_std.h	342;"	d
+GLUT_CURSOR_TOP_LEFT_CORNER	freeglut/include/GL/freeglut_std.h	350;"	d
+GLUT_CURSOR_TOP_RIGHT_CORNER	freeglut/include/GL/freeglut_std.h	351;"	d
+GLUT_CURSOR_TOP_SIDE	freeglut/include/GL/freeglut_std.h	346;"	d
+GLUT_CURSOR_UP_DOWN	freeglut/include/GL/freeglut_std.h	344;"	d
+GLUT_CURSOR_WAIT	freeglut/include/GL/freeglut_std.h	341;"	d
+GLUT_DEBUG	freeglut/include/GL/freeglut_ext.h	109;"	d
+GLUT_DEPTH	freeglut/include/GL/freeglut_std.h	171;"	d
+GLUT_DEVICE_IGNORE_KEY_REPEAT	freeglut/include/GL/freeglut_std.h	286;"	d
+GLUT_DEVICE_KEY_REPEAT	freeglut/include/GL/freeglut_std.h	287;"	d
+GLUT_DIRECT_RENDERING	freeglut/include/GL/freeglut_ext.h	82;"	d
+GLUT_DISPLAY_MODE_POSSIBLE	freeglut/include/GL/freeglut_std.h	264;"	d
+GLUT_DOUBLE	freeglut/include/GL/freeglut_std.h	168;"	d
+GLUT_DOWN	freeglut/include/GL/freeglut_std.h	156;"	d
+GLUT_ELAPSED_TIME	freeglut/include/GL/freeglut_std.h	270;"	d
+GLUT_ENTERED	freeglut/include/GL/freeglut_std.h	159;"	d
+GLUT_FORCE_DIRECT_CONTEXT	freeglut/include/GL/freeglut_ext.h	67;"	d
+GLUT_FORCE_INDIRECT_CONTEXT	freeglut/include/GL/freeglut_ext.h	64;"	d
+GLUT_FORWARD_COMPATIBLE	freeglut/include/GL/freeglut_ext.h	110;"	d
+GLUT_FULLY_COVERED	freeglut/include/GL/freeglut_std.h	187;"	d
+GLUT_FULLY_RETAINED	freeglut/include/GL/freeglut_std.h	185;"	d
+GLUT_FULL_SCREEN	freeglut/include/GL/freeglut_ext.h	84;"	d
+GLUT_GAME_MODE_ACTIVE	freeglut/include/GL/freeglut_std.h	380;"	d
+GLUT_GAME_MODE_DISPLAY_CHANGED	freeglut/include/GL/freeglut_std.h	386;"	d
+GLUT_GAME_MODE_HEIGHT	freeglut/include/GL/freeglut_std.h	383;"	d
+GLUT_GAME_MODE_PIXEL_DEPTH	freeglut/include/GL/freeglut_std.h	384;"	d
+GLUT_GAME_MODE_POSSIBLE	freeglut/include/GL/freeglut_std.h	381;"	d
+GLUT_GAME_MODE_REFRESH_RATE	freeglut/include/GL/freeglut_std.h	385;"	d
+GLUT_GAME_MODE_WIDTH	freeglut/include/GL/freeglut_std.h	382;"	d
+GLUT_GREEN	freeglut/include/GL/freeglut_std.h	362;"	d
+GLUT_HAS_DIAL_AND_BUTTON_BOX	freeglut/include/GL/freeglut_std.h	279;"	d
+GLUT_HAS_JOYSTICK	freeglut/include/GL/freeglut_std.h	288;"	d
+GLUT_HAS_KEYBOARD	freeglut/include/GL/freeglut_std.h	276;"	d
+GLUT_HAS_MOUSE	freeglut/include/GL/freeglut_std.h	277;"	d
+GLUT_HAS_MULTI	freeglut/include/GL/freeglut_ext.h	180;"	d
+GLUT_HAS_OVERLAY	freeglut/include/GL/freeglut_std.h	299;"	d
+GLUT_HAS_SPACEBALL	freeglut/include/GL/freeglut_std.h	278;"	d
+GLUT_HAS_TABLET	freeglut/include/GL/freeglut_std.h	280;"	d
+GLUT_HIDDEN	freeglut/include/GL/freeglut_std.h	184;"	d
+GLUT_INDEX	freeglut/include/GL/freeglut_std.h	166;"	d
+GLUT_INIT_DISPLAY_MODE	freeglut/include/GL/freeglut_std.h	269;"	d
+GLUT_INIT_FLAGS	freeglut/include/GL/freeglut_ext.h	103;"	d
+GLUT_INIT_MAJOR_VERSION	freeglut/include/GL/freeglut_ext.h	101;"	d
+GLUT_INIT_MINOR_VERSION	freeglut/include/GL/freeglut_ext.h	102;"	d
+GLUT_INIT_PROFILE	freeglut/include/GL/freeglut_ext.h	104;"	d
+GLUT_INIT_STATE	freeglut/include/GL/freeglut_ext.h	72;"	d
+GLUT_INIT_WINDOW_HEIGHT	freeglut/include/GL/freeglut_std.h	268;"	d
+GLUT_INIT_WINDOW_WIDTH	freeglut/include/GL/freeglut_std.h	267;"	d
+GLUT_INIT_WINDOW_X	freeglut/include/GL/freeglut_std.h	265;"	d
+GLUT_INIT_WINDOW_Y	freeglut/include/GL/freeglut_std.h	266;"	d
+GLUT_JOYSTICK_AXES	freeglut/include/GL/freeglut_std.h	291;"	d
+GLUT_JOYSTICK_BUTTONS	freeglut/include/GL/freeglut_std.h	290;"	d
+GLUT_JOYSTICK_BUTTON_A	freeglut/include/GL/freeglut_std.h	372;"	d
+GLUT_JOYSTICK_BUTTON_B	freeglut/include/GL/freeglut_std.h	373;"	d
+GLUT_JOYSTICK_BUTTON_C	freeglut/include/GL/freeglut_std.h	374;"	d
+GLUT_JOYSTICK_BUTTON_D	freeglut/include/GL/freeglut_std.h	375;"	d
+GLUT_JOYSTICK_POLL_RATE	freeglut/include/GL/freeglut_std.h	292;"	d
+GLUT_KEY_ALT_L	freeglut/include/GL/freeglut_ext.h	45;"	d
+GLUT_KEY_ALT_R	freeglut/include/GL/freeglut_ext.h	46;"	d
+GLUT_KEY_BEGIN	freeglut/include/GL/freeglut_ext.h	39;"	d
+GLUT_KEY_CTRL_L	freeglut/include/GL/freeglut_ext.h	43;"	d
+GLUT_KEY_CTRL_R	freeglut/include/GL/freeglut_ext.h	44;"	d
+GLUT_KEY_DELETE	freeglut/include/GL/freeglut_ext.h	40;"	d
+GLUT_KEY_DOWN	freeglut/include/GL/freeglut_std.h	143;"	d
+GLUT_KEY_END	freeglut/include/GL/freeglut_std.h	147;"	d
+GLUT_KEY_F1	freeglut/include/GL/freeglut_std.h	128;"	d
+GLUT_KEY_F10	freeglut/include/GL/freeglut_std.h	137;"	d
+GLUT_KEY_F11	freeglut/include/GL/freeglut_std.h	138;"	d
+GLUT_KEY_F12	freeglut/include/GL/freeglut_std.h	139;"	d
+GLUT_KEY_F2	freeglut/include/GL/freeglut_std.h	129;"	d
+GLUT_KEY_F3	freeglut/include/GL/freeglut_std.h	130;"	d
+GLUT_KEY_F4	freeglut/include/GL/freeglut_std.h	131;"	d
+GLUT_KEY_F5	freeglut/include/GL/freeglut_std.h	132;"	d
+GLUT_KEY_F6	freeglut/include/GL/freeglut_std.h	133;"	d
+GLUT_KEY_F7	freeglut/include/GL/freeglut_std.h	134;"	d
+GLUT_KEY_F8	freeglut/include/GL/freeglut_std.h	135;"	d
+GLUT_KEY_F9	freeglut/include/GL/freeglut_std.h	136;"	d
+GLUT_KEY_HOME	freeglut/include/GL/freeglut_std.h	146;"	d
+GLUT_KEY_INSERT	freeglut/include/GL/freeglut_std.h	148;"	d
+GLUT_KEY_LEFT	freeglut/include/GL/freeglut_std.h	140;"	d
+GLUT_KEY_NUM_LOCK	freeglut/include/GL/freeglut_ext.h	38;"	d
+GLUT_KEY_PAGE_DOWN	freeglut/include/GL/freeglut_std.h	145;"	d
+GLUT_KEY_PAGE_UP	freeglut/include/GL/freeglut_std.h	144;"	d
+GLUT_KEY_REPEAT_DEFAULT	freeglut/include/GL/freeglut_std.h	370;"	d
+GLUT_KEY_REPEAT_OFF	freeglut/include/GL/freeglut_std.h	368;"	d
+GLUT_KEY_REPEAT_ON	freeglut/include/GL/freeglut_std.h	369;"	d
+GLUT_KEY_RIGHT	freeglut/include/GL/freeglut_std.h	142;"	d
+GLUT_KEY_SHIFT_L	freeglut/include/GL/freeglut_ext.h	41;"	d
+GLUT_KEY_SHIFT_R	freeglut/include/GL/freeglut_ext.h	42;"	d
+GLUT_KEY_UP	freeglut/include/GL/freeglut_std.h	141;"	d
+GLUT_LAYER_IN_USE	freeglut/include/GL/freeglut_std.h	298;"	d
+GLUT_LEFT	freeglut/include/GL/freeglut_std.h	158;"	d
+GLUT_LEFT_BUTTON	freeglut/include/GL/freeglut_std.h	153;"	d
+GLUT_LUMINANCE	freeglut/include/GL/freeglut_std.h	175;"	d
+GLUT_MENU_IN_USE	freeglut/include/GL/freeglut_std.h	181;"	d
+GLUT_MENU_NOT_IN_USE	freeglut/include/GL/freeglut_std.h	180;"	d
+GLUT_MENU_NUM_ITEMS	freeglut/include/GL/freeglut_std.h	263;"	d
+GLUT_MIDDLE_BUTTON	freeglut/include/GL/freeglut_std.h	154;"	d
+GLUT_MULTISAMPLE	freeglut/include/GL/freeglut_std.h	173;"	d
+GLUT_NORMAL	freeglut/include/GL/freeglut_std.h	321;"	d
+GLUT_NORMAL_DAMAGED	freeglut/include/GL/freeglut_std.h	301;"	d
+GLUT_NOT_VISIBLE	freeglut/include/GL/freeglut_std.h	182;"	d
+GLUT_NUM_BUTTON_BOX_BUTTONS	freeglut/include/GL/freeglut_std.h	283;"	d
+GLUT_NUM_DIALS	freeglut/include/GL/freeglut_std.h	284;"	d
+GLUT_NUM_MOUSE_BUTTONS	freeglut/include/GL/freeglut_std.h	281;"	d
+GLUT_NUM_SPACEBALL_BUTTONS	freeglut/include/GL/freeglut_std.h	282;"	d
+GLUT_NUM_TABLET_BUTTONS	freeglut/include/GL/freeglut_std.h	285;"	d
+GLUT_OVERLAY	freeglut/include/GL/freeglut_std.h	322;"	d
+GLUT_OVERLAY_DAMAGED	freeglut/include/GL/freeglut_std.h	302;"	d
+GLUT_OVERLAY_POSSIBLE	freeglut/include/GL/freeglut_std.h	297;"	d
+GLUT_OWNS_JOYSTICK	freeglut/include/GL/freeglut_std.h	289;"	d
+GLUT_PARTIALLY_RETAINED	freeglut/include/GL/freeglut_std.h	186;"	d
+GLUT_RED	freeglut/include/GL/freeglut_std.h	361;"	d
+GLUT_RENDERING_CONTEXT	freeglut/include/GL/freeglut_ext.h	81;"	d
+GLUT_RGB	freeglut/include/GL/freeglut_std.h	164;"	d
+GLUT_RGBA	freeglut/include/GL/freeglut_std.h	165;"	d
+GLUT_RIGHT_BUTTON	freeglut/include/GL/freeglut_std.h	155;"	d
+GLUT_SCREEN_HEIGHT	freeglut/include/GL/freeglut_std.h	260;"	d
+GLUT_SCREEN_HEIGHT_MM	freeglut/include/GL/freeglut_std.h	262;"	d
+GLUT_SCREEN_WIDTH	freeglut/include/GL/freeglut_std.h	259;"	d
+GLUT_SCREEN_WIDTH_MM	freeglut/include/GL/freeglut_std.h	261;"	d
+GLUT_SINGLE	freeglut/include/GL/freeglut_std.h	167;"	d
+GLUT_SRGB	freeglut/include/GL/freeglut_ext.h	228;"	d
+GLUT_STENCIL	freeglut/include/GL/freeglut_std.h	172;"	d
+GLUT_STEREO	freeglut/include/GL/freeglut_std.h	174;"	d
+GLUT_STROKE_MONO_ROMAN	freeglut/include/GL/freeglut_std.h	196;"	d
+GLUT_STROKE_MONO_ROMAN	freeglut/include/GL/freeglut_std.h	222;"	d
+GLUT_STROKE_ROMAN	freeglut/include/GL/freeglut_std.h	195;"	d
+GLUT_STROKE_ROMAN	freeglut/include/GL/freeglut_std.h	221;"	d
+GLUT_TRANSPARENT_INDEX	freeglut/include/GL/freeglut_std.h	300;"	d
+GLUT_TRY_DIRECT_CONTEXT	freeglut/include/GL/freeglut_ext.h	66;"	d
+GLUT_UP	freeglut/include/GL/freeglut_std.h	157;"	d
+GLUT_USE_CURRENT_CONTEXT	freeglut/include/GL/freeglut_ext.h	59;"	d
+GLUT_VERSION	freeglut/include/GL/freeglut_ext.h	79;"	d
+GLUT_VIDEO_RESIZE_HEIGHT	freeglut/include/GL/freeglut_std.h	316;"	d
+GLUT_VIDEO_RESIZE_HEIGHT_DELTA	freeglut/include/GL/freeglut_std.h	312;"	d
+GLUT_VIDEO_RESIZE_IN_USE	freeglut/include/GL/freeglut_std.h	308;"	d
+GLUT_VIDEO_RESIZE_POSSIBLE	freeglut/include/GL/freeglut_std.h	307;"	d
+GLUT_VIDEO_RESIZE_WIDTH	freeglut/include/GL/freeglut_std.h	315;"	d
+GLUT_VIDEO_RESIZE_WIDTH_DELTA	freeglut/include/GL/freeglut_std.h	311;"	d
+GLUT_VIDEO_RESIZE_X	freeglut/include/GL/freeglut_std.h	313;"	d
+GLUT_VIDEO_RESIZE_X_DELTA	freeglut/include/GL/freeglut_std.h	309;"	d
+GLUT_VIDEO_RESIZE_Y	freeglut/include/GL/freeglut_std.h	314;"	d
+GLUT_VIDEO_RESIZE_Y_DELTA	freeglut/include/GL/freeglut_std.h	310;"	d
+GLUT_VISIBLE	freeglut/include/GL/freeglut_std.h	183;"	d
+GLUT_WINDOW_ACCUM_ALPHA_SIZE	freeglut/include/GL/freeglut_std.h	249;"	d
+GLUT_WINDOW_ACCUM_BLUE_SIZE	freeglut/include/GL/freeglut_std.h	248;"	d
+GLUT_WINDOW_ACCUM_GREEN_SIZE	freeglut/include/GL/freeglut_std.h	247;"	d
+GLUT_WINDOW_ACCUM_RED_SIZE	freeglut/include/GL/freeglut_std.h	246;"	d
+GLUT_WINDOW_ALPHA_SIZE	freeglut/include/GL/freeglut_std.h	245;"	d
+GLUT_WINDOW_BLUE_SIZE	freeglut/include/GL/freeglut_std.h	244;"	d
+GLUT_WINDOW_BORDER_WIDTH	freeglut/include/GL/freeglut_ext.h	76;"	d
+GLUT_WINDOW_BUFFER_SIZE	freeglut/include/GL/freeglut_std.h	239;"	d
+GLUT_WINDOW_COLORMAP_SIZE	freeglut/include/GL/freeglut_std.h	254;"	d
+GLUT_WINDOW_CURSOR	freeglut/include/GL/freeglut_std.h	257;"	d
+GLUT_WINDOW_DEPTH_SIZE	freeglut/include/GL/freeglut_std.h	241;"	d
+GLUT_WINDOW_DOUBLEBUFFER	freeglut/include/GL/freeglut_std.h	250;"	d
+GLUT_WINDOW_FORMAT_ID	freeglut/include/GL/freeglut_std.h	271;"	d
+GLUT_WINDOW_GREEN_SIZE	freeglut/include/GL/freeglut_std.h	243;"	d
+GLUT_WINDOW_HEADER_HEIGHT	freeglut/include/GL/freeglut_ext.h	77;"	d
+GLUT_WINDOW_HEIGHT	freeglut/include/GL/freeglut_std.h	238;"	d
+GLUT_WINDOW_NUM_CHILDREN	freeglut/include/GL/freeglut_std.h	253;"	d
+GLUT_WINDOW_NUM_SAMPLES	freeglut/include/GL/freeglut_std.h	255;"	d
+GLUT_WINDOW_PARENT	freeglut/include/GL/freeglut_std.h	252;"	d
+GLUT_WINDOW_RED_SIZE	freeglut/include/GL/freeglut_std.h	242;"	d
+GLUT_WINDOW_RGBA	freeglut/include/GL/freeglut_std.h	251;"	d
+GLUT_WINDOW_STENCIL_SIZE	freeglut/include/GL/freeglut_std.h	240;"	d
+GLUT_WINDOW_STEREO	freeglut/include/GL/freeglut_std.h	256;"	d
+GLUT_WINDOW_WIDTH	freeglut/include/GL/freeglut_std.h	237;"	d
+GLUT_WINDOW_X	freeglut/include/GL/freeglut_std.h	235;"	d
+GLUT_WINDOW_Y	freeglut/include/GL/freeglut_std.h	236;"	d
+GLUT_XLIB_IMPLEMENTATION	freeglut/include/GL/freeglut_std.h	117;"	d
+GLUTproc	freeglut/include/GL/freeglut_ext.h	/^typedef void (*GLUTproc)();$/;"	t
+G_CLIENTVER	common/definitions.h	23;"	d
+G_argc	client/pong_client_starter.c	/^int G_argc;$/;"	v
+G_argv	client/pong_client_starter.c	/^char **G_argv;$/;"	v
+G_clients	server/serverStartup.c	/^static SserverInternalClientData G_clients[CLIENTS_MAX];$/;"	v	file:
+G_connections_alive	server/pong_server_accept_client.c	/^static int G_connections_alive=0;$/;"	v	file:
+G_gameDataArr	common/pong_dataStorage.c	/^static SGameData G_gameDataArr[MAX_GAMES_ON_SERVER];$/;"	v	file:
+G_gameIdFifo	common/pong_dataStorage.c	/^SIdFifo *G_gameIdFifo = NULL;$/;"	v
+G_game_name	client/pong_client_starter.c	/^static char G_game_name[16];$/;"	v	file:
+G_passwd	client/pong_client_starter.c	/^static char G_passwd[15];$/;"	v	file:
+G_serverip	client/pong_client_starter.c	/^static char G_serverip[16];$/;"	v	file:
+G_serverip_bin	client/pong_client_starter.c	/^static struct in_addr G_serverip_bin;$/;"	v	typeref:struct:in_addr	file:
+G_window_real_height	client/pong_drawer.c	/^int G_window_real_height;$/;"	v
+G_window_real_width	client/pong_drawer.c	/^int G_window_real_width;$/;"	v
+Gitem	client/pong_drawer.c	/^drawable_items *Gitem;$/;"	v
+Gitemlist_head	client/pong_drawer.h	/^drawable_items *Gitemlist_head;$/;"	v
+Gitemlist_lock	client/pong_drawer.c	/^static pthread_mutex_t Gitemlist_lock;$/;"	v	file:
+Gsendqueue	client/pong_client_starter.c	/^SClientSendQueue Gsendqueue;$/;"	v
+HELLO_MSG_TMO	common/definitions.h	87;"	d
+HELPTEXT	client/pong_client_starter.c	28;"	d	file:
+IDFIFO_ID_INVALID	common/id_fifo.h	30;"	d
+INGAME_SERVERMSG_TMO	common/definitions.h	85;"	d
+INIT_REQ_TIM	server/pong_server_accept_client.c	51;"	d	file:
+INVALID_PLAYER	common/definitions.h	76;"	d
+INVALID_SOCKET	common/definitions.h	38;"	d
+IdPoolNonFreeId	common/id_fifo.h	29;"	d
+IdPool_calcAllocSize	common/id_fifo.h	28;"	d
+LD_FLAGS	client/Makefile	/^LD_FLAGS = -lglut -lm -lGL -lpthread -lGLU -lrt$/;"	m
+LD_FLAGS	server/Makefile	/^LD_FLAGS = -lglut -lm -lGL -lpthread -lGLU -lrt$/;"	m
+MAX_GAMES_ON_SERVER	common/definitions.h	75;"	d
+MAZPONG_DRAWABLE_BALLS	client/drawable_balls.h	2;"	d
+MAZPONG_DRAWABLE_PADDLESS	client/drawable_paddles.h	2;"	d
+MAZPONG_DRAWABLE_TEXT	client/drawable_text.h	2;"	d
+MAZPONG_DRAWABLE_WALLS	client/drawable_walls.h	2;"	d
+MAZPONG_MOVABLE_ITEM	client/movable_item.h	3;"	d
+MICRSECS_IN_MILLISECS	common/definitions.h	43;"	d
+MUTEX_AMOUNT_IN_GAME_DATA	common/definitions.h	69;"	d
+NETWORK_MESSAGES_H	common/network_messages.h	72;"	d
+NETW_GAMEDATA_UPDATE_MSG	common/network_messages.h	182;"	d
+NETW_GAME_CLIENT_KEY_PRESSED_MSG	common/network_messages.h	196;"	d
+NETW_GAME_HELLO_CLI	common/network_messages.h	100;"	d
+NETW_GAME_HELLO_SRV_FULL	common/network_messages.h	114;"	d
+NETW_GAME_HELLO_SRV_SHORT	common/network_messages.h	107;"	d
+NETW_GAME_INIT_REQ	common/network_messages.h	139;"	d
+NETW_GAME_INIT_RESP	common/network_messages.h	147;"	d
+NETW_GAME_JOIN_REQ	common/network_messages.h	122;"	d
+NETW_GAME_JOIN_RESP	common/network_messages.h	130;"	d
+NETW_GAME_KILL_MSG	common/network_messages.h	189;"	d
+NETW_GAME_START_MSG	common/network_messages.h	155;"	d
+NETW_MSG_PING_REQ_SIZE	common/network_messages.h	77;"	d
+NETW_PING_REQ	common/network_messages.h	164;"	d
+NETW_PING_RESP	common/network_messages.h	173;"	d
+NOMINMAX	freeglut/include/GL/freeglut_std.h	61;"	d
+OPTSTRING	client/pong_client_starter.c	27;"	d	file:
+PADDLE_START_HEIGHT	common/definitions.h	129;"	d
+PADDLE_START_WIDTH	common/definitions.h	128;"	d
+PADDLE_WIDTH_MAX	common/definitions.h	127;"	d
+PADDLE_WIDTH_MIN	common/definitions.h	126;"	d
+PADDLE_WIDTH_QUANTUM	common/definitions.h	125;"	d
+PASSWD_MAX	common/definitions.h	78;"	d
+PIXELS_PER_MICROSEC_TO_VELOCITYVALUE	common/definitions.h	103;"	d
+PIXELS_PER_MSEC_TO_VELOCITYVALUE	common/definitions.h	102;"	d
+PIX_PER_SEC	common/definitions.h	81;"	d
+PLATE_FAST_COLOR	common/definitions.h	131;"	d
+PLATE_SHORTER_COLOR	common/definitions.h	133;"	d
+PLATE_STUCK_COLOR	common/definitions.h	134;"	d
+PLATE_WIDER_COLOR	common/definitions.h	132;"	d
+PLAYER_AMNT_UNDEF	common/definitions.h	77;"	d
+PLAYER_NAME_MAX	common/definitions.h	166;"	d
+POLLTIMEQUANTA	common/definitions.h	120;"	d
+PONG_ASSERT_H	common/pong_assert.h	23;"	d
+PONG_CLIENT_QUEUE_H	client/pong_client_queue.h	2;"	d
+PONG_DATAPRINT	common/pong_netw.c	26;"	d	file:
+PONG_DATAPRINT	common/pong_netw.c	28;"	d	file:
+PONG_DATA_STORAGE_H	common/pong_dataStorage.h	21;"	d
+PONG_DRAWER_H	client/pong_drawer.h	15;"	d
+PONG_GENERAL_H	common/general.h	15;"	d
+PONG_H	client/pong.h	20;"	d
+PONG_MISC_FUNC_H	common/pong_misc_func.h	16;"	d
+PONG_NETW_H	common/pong_netw.h	17;"	d
+PONG_PLACE_CTR_H	server/place_counter_thread.h	19;"	d
+PONG_QUEUE_H	common/pong_queue.h	2;"	d
+PONG_RET_CP_INVALID	common/definitions.h	44;"	d
+PONG_SERVER_QUEUE_H	server/pong_server_queue.h	2;"	d
+PRINT_S_ERR	common/pong_netw.h	25;"	d
+PRINT_S_ERR	common/pong_netw.h	31;"	d
+PoNG_ID_FIFo	common/id_fifo.h	18;"	d
+PoNG_NETW_CLIENT_IF_H	client/pong_client_netwIF.h	4;"	d
+QUEUELEN	client/pong_client_queue.h	6;"	d
+RX_QUEUELEN	client/pong_client_queue.h	7;"	d
+SBallData	common/pong_dataStorage.h	/^typedef struct SBallData$/;"	s
+SBallData	common/pong_dataStorage.h	/^}SBallData;$/;"	t	typeref:struct:SBallData
+SClientGameData	common/pong_dataStorage.h	/^typedef struct SClientGameData$/;"	s
+SClientGameData	common/pong_dataStorage.h	/^}SClientGameData;$/;"	t	typeref:struct:SClientGameData
+SClientSendQueue	client/pong_client_queue.h	/^typedef struct SClientSendQueue$/;"	s
+SClientSendQueue	client/pong_client_queue.h	/^}SClientSendQueue;$/;"	t	typeref:struct:SClientSendQueue
+SClientStartArgs	client/pong_client_netwIF.h	/^typedef struct SClientStartArgs$/;"	s
+SClientStartArgs	client/pong_client_netwIF.h	/^}SClientStartArgs;$/;"	t	typeref:struct:SClientStartArgs
+SConnectionInfo	server/pong_server_accept_client.h	/^typedef struct SConnectionInfo$/;"	s
+SConnectionInfo	server/pong_server_accept_client.h	/^}SConnectionInfo;$/;"	t	typeref:struct:SConnectionInfo
+SDataDelivery	common/pong_dataStorage.h	/^typedef struct SDataDelivery$/;"	s
+SDataDelivery	common/pong_dataStorage.h	/^}SDataDelivery;$/;"	t	typeref:struct:SDataDelivery
+SECS_IN_MILLISEC	common/definitions.h	42;"	d
+SERVERQUEUELEN	common/pong_dataStorage.h	37;"	d
+SERVER_ACCEPT_CLIENT_H	server/pong_server_accept_client.h	29;"	d
+SERVER_ID	common/pong_netw.h	36;"	d
+SERVER_POS_UPD_PORT	common/pong_netw.h	34;"	d
+SERVER_RECV_TMO	common/definitions.h	91;"	d
+SERVER_RX_QUEUELEN	common/pong_dataStorage.h	38;"	d
+SERVER_STARTUP_H	server/serverStartup.h	25;"	d
+SERVER_TCP_PORT	common/pong_netw.h	35;"	d
+SERVER_add_player_to_gamedata	common/pong_dataStorage.c	/^int SERVER_add_player_to_gamedata(SGameData *gameData,char *player_name)$/;"	f
+SERVER_copyGamedataForClientById	common/pong_dataStorage.c	/^int SERVER_copyGamedataForClientById(SClientGameData *CligameData,int gameId)$/;"	f
+SERVER_setup_game_generics	common/pong_dataStorage.c	/^int SERVER_setup_game_generics(SGameData *gameData)$/;"	f
+SGameArea	common/pong_dataStorage.h	/^typedef struct SGameArea$/;"	s
+SGameArea	common/pong_dataStorage.h	/^}SGameArea;$/;"	t	typeref:struct:SGameArea
+SGameData	common/pong_dataStorage.h	/^typedef struct SGameData$/;"	s
+SGameData	common/pong_dataStorage.h	/^}SGameData;$/;"	t	typeref:struct:SGameData
+SHandshakeStatus	common/pong_dataStorage.h	/^typedef struct SHandshakeStatus$/;"	s
+SHandshakeStatus	common/pong_dataStorage.h	/^}SHandshakeStatus;$/;"	t	typeref:struct:SHandshakeStatus
+SIdFifo	common/id_fifo.h	/^typedef struct SIdFifo$/;"	s
+SIdFifo	common/id_fifo.h	/^}SIdFifo;$/;"	t	typeref:struct:SIdFifo
+SOCKET	common/definitions.h	/^        typedef int SOCKET;$/;"	t
+SPlateInfo	common/pong_dataStorage.h	/^typedef struct SPlateInfo$/;"	s
+SPlateInfo	common/pong_dataStorage.h	/^}SPlateInfo;$/;"	t	typeref:struct:SPlateInfo
+SPlateSpecials	common/pong_dataStorage.h	/^typedef struct SPlateSpecials$/;"	s
+SPlateSpecials	common/pong_dataStorage.h	/^}SPlateSpecials;$/;"	t	typeref:struct:SPlateSpecials
+SPlayerData	common/pong_dataStorage.h	/^typedef struct SPlayerData$/;"	s
+SPlayerData	common/pong_dataStorage.h	/^}SPlayerData;$/;"	t	typeref:struct:SPlayerData
+SQueueItem	common/pong_queue.h	/^typedef struct SQueueItem$/;"	s
+SQueueItem	common/pong_queue.h	/^}SQueueItem;$/;"	t	typeref:struct:SQueueItem
+SSendQueue	common/pong_queue.h	/^typedef struct SSendQueue$/;"	s
+SSendQueue	common/pong_queue.h	/^}SSendQueue;$/;"	t	typeref:struct:SSendQueue
+SServerSendQueue	common/pong_dataStorage.h	/^typedef struct SServerSendQueue$/;"	s
+SServerSendQueue	common/pong_dataStorage.h	/^}SServerSendQueue;$/;"	t	typeref:struct:SServerSendQueue
+SStartParams	server/serverStartup.h	/^typedef struct SStartParams$/;"	s
+SStartParams	server/serverStartup.h	/^}SStartParams;$/;"	t	typeref:struct:SStartParams
+SWallInfo	common/pong_dataStorage.h	/^typedef struct SWallInfo$/;"	s
+SWallInfo	common/pong_dataStorage.h	/^}SWallInfo;$/;"	t	typeref:struct:SWallInfo
+Snetw_client_dir_change_pressed_msg	common/network_messages.h	/^typedef struct Snetw_client_dir_change_pressed_msg$/;"	s
+Snetw_client_dir_change_pressed_msg	common/network_messages.h	/^}Snetw_client_dir_change_pressed_msg;$/;"	t	typeref:struct:Snetw_client_dir_change_pressed_msg
+Snetw_game_init_req	common/network_messages.h	/^typedef struct Snetw_game_init_req$/;"	s
+Snetw_game_init_req	common/network_messages.h	/^}Snetw_game_init_req;$/;"	t	typeref:struct:Snetw_game_init_req
+Snetw_game_init_resp	common/network_messages.h	/^typedef struct Snetw_game_init_resp$/;"	s
+Snetw_game_init_resp	common/network_messages.h	/^}Snetw_game_init_resp;$/;"	t	typeref:struct:Snetw_game_init_resp
+Snetw_game_join_req	common/network_messages.h	/^typedef struct Snetw_game_join_req$/;"	s
+Snetw_game_join_req	common/network_messages.h	/^}Snetw_game_join_req;$/;"	t	typeref:struct:Snetw_game_join_req
+Snetw_game_join_resp	common/network_messages.h	/^typedef struct Snetw_game_join_resp$/;"	s
+Snetw_game_join_resp	common/network_messages.h	/^}Snetw_game_join_resp;$/;"	t	typeref:struct:Snetw_game_join_resp
+Snetw_game_kill_msg	common/network_messages.h	/^typedef struct Snetw_game_kill_msg$/;"	s
+Snetw_game_kill_msg	common/network_messages.h	/^}Snetw_game_kill_msg;$/;"	t	typeref:struct:Snetw_game_kill_msg
+Snetw_game_start_msg	common/network_messages.h	/^typedef struct Snetw_game_start_msg$/;"	s
+Snetw_game_start_msg	common/network_messages.h	/^}Snetw_game_start_msg;$/;"	t	typeref:struct:Snetw_game_start_msg
+Snetw_gamedata_update_msg	common/network_messages.h	/^typedef struct Snetw_gamedata_update_msg$/;"	s
+Snetw_gamedata_update_msg	common/network_messages.h	/^}Snetw_gamedata_update_msg;$/;"	t	typeref:struct:Snetw_gamedata_update_msg
+Snetw_hello_from_client	common/network_messages.h	/^typedef struct Snetw_hello_from_client$/;"	s
+Snetw_hello_from_client	common/network_messages.h	/^}Snetw_hello_from_client;$/;"	t	typeref:struct:Snetw_hello_from_client
+Snetw_hello_full_resp	common/network_messages.h	/^typedef struct Snetw_hello_full_resp$/;"	s
+Snetw_hello_full_resp	common/network_messages.h	/^}Snetw_hello_full_resp;$/;"	t	typeref:struct:Snetw_hello_full_resp
+Snetw_hello_short_resp	common/network_messages.h	/^typedef struct Snetw_hello_short_resp$/;"	s
+Snetw_hello_short_resp	common/network_messages.h	/^}Snetw_hello_short_resp;$/;"	t	typeref:struct:Snetw_hello_short_resp
+Snetw_internal_msg_header	common/network_messages.h	/^typedef struct Snetw_internal_msg_header$/;"	s
+Snetw_internal_msg_header	common/network_messages.h	/^}Snetw_internal_msg_header;$/;"	t	typeref:struct:Snetw_internal_msg_header
+Snetw_ping_req	common/network_messages.h	/^typedef struct Snetw_ping_req$/;"	s
+Snetw_ping_req	common/network_messages.h	/^}Snetw_ping_req;$/;"	t	typeref:struct:Snetw_ping_req
+Snetw_ping_resp	common/network_messages.h	/^typedef struct Snetw_ping_resp$/;"	s
+Snetw_ping_resp	common/network_messages.h	/^}Snetw_ping_resp;$/;"	t	typeref:struct:Snetw_ping_resp
+SserverInternalClientData	server/pong_server_accept_client.h	/^typedef struct SserverInternalClientData$/;"	s
+SserverInternalClientData	server/pong_server_accept_client.h	/^}SserverInternalClientData;$/;"	t	typeref:struct:SserverInternalClientData
+TESTOUT	client/Makefile	/^TESTOUT = test$/;"	m
+TESTSRC	client/Makefile	/^TESTSRC = test.c$/;"	m
+TGT	client/Makefile	/^TGT = pongClient$/;"	m
+TGT	server/Makefile	/^TGT = pongServer$/;"	m
+TRANSITION_BASEDON_VELOCITYVALUE_AND_MILLISECONDS	common/definitions.h	104;"	d
+WCROSSTESTOUT	client/Makefile	/^WCROSSTESTOUT = test_crosscompiled.exe$/;"	m
+WCROSS_CC	client/Makefile	/^WCROSS_CC = i686-pc-mingw32-gcc$/;"	m
+WCROSS_CC	server/Makefile	/^WCROSS_CC = i686-pc-mingw32-gcc$/;"	m
+WCROSS_FLAGS	server/Makefile	/^WCROSS_FLAGS  = -Wall -ggdb -I ..\/common\/ -I ..\/freeglut\/include\/$/;"	m
+WCROSS_TGT	client/Makefile	/^WCROSS_TGT = $(TGT)_crosscompiled.exe$/;"	m
+WCROSS_TGT	server/Makefile	/^WCROSS_TGT = $(TGT)_crosscompiled.exe$/;"	m
+WC_FLAGS	client/Makefile	/^WC_FLAGS = -Wall -ggdb -I ..\/common\/ -I ..\/freeglut\/include\/$/;"	m
+WC_FLAGS	server/Makefile	/^WC_FLAGS = -Wall -I ..\/common\/ -I ..\/freeglut\/include\/$/;"	m
+WDEFINES	client/Makefile	/^WDEFINES = -D__WIN32__$/;"	m
+WDEFINES	server/Makefile	/^WDEFINES = -D__WIN32__$/;"	m
+WIN32_LEAN_AND_MEAN	freeglut/include/GL/freeglut_std.h	58;"	d
+WLD_FLAGS	client/Makefile	/^WLD_FLAGS = -L..\/freeglut\/lib\/ -lfreeglut -lm -lpthread -lopengl32 -lglu32 -lws2_32$/;"	m
+WLD_FLAGS	server/Makefile	/^WLD_FLAGS = -L..\/freeglut\/lib\/ -lfreeglut -lm -lpthread -lopengl32 -lglu32 -lws2_32$/;"	m
+WTESTOUT	client/Makefile	/^WTESTOUT = test.exe$/;"	m
+WTGT	client/Makefile	/^WTGT = $(TGT).exe$/;"	m
+WTGT	server/Makefile	/^WTGT = $(TGT).exe$/;"	m
+__FREEGLUT_EXT_H__	freeglut/include/GL/freeglut_ext.h	2;"	d
+__FREEGLUT_H__	freeglut/include/GL/freeglut.h	2;"	d
+__FREEGLUT_STD_H__	freeglut/include/GL/freeglut_std.h	2;"	d
+__GLUT_H__	freeglut/include/GL/glut.h	2;"	d
+abort_game	common/pong_dataStorage.h	/^    int abort_game;$/;"	m	struct:SGameData
+add_balls	client/pong_drawer.c	/^int add_balls(drawable_items *item,SBallData *balls)$/;"	f
+add_paddle	client/pong_drawer.c	/^int add_paddle(drawable_items *item,SPlateInfo *plate,int paddleIndex)$/;"	f
+add_senderamnt	server/pong_server_queue.c	/^void add_senderamnt(char *store,unsigned char senderamnt)$/;"	f
+add_walls	client/pong_drawer.c	/^int add_walls(drawable_items *item,SWallInfo *walls)$/;"	f
+amnt	common/id_fifo.h	/^    unsigned int amnt;$/;"	m	struct:SIdFifo
+amnt_of_players	client/pong_client_netwIF.h	/^    int amnt_of_players;        $/;"	m	struct:SClientStartArgs
+area	client/pong_drawer.c	/^SGameArea area;$/;"	v
+area	common/pong_dataStorage.h	/^    SGameArea area;$/;"	m	struct:SClientGameData
+area	common/pong_dataStorage.h	/^    SGameArea area;$/;"	m	struct:SGameData
+baddlearray	client/pong_drawer.c	/^drawable_paddle *baddlearray[4]={NULL};$/;"	v
+ball	common/definitions.h	136;"	d
+ballDataLock	common/pong_dataStorage.h	/^    pthread_mutex_t ballDataLock; $/;"	m	struct:SBallData
+ballDrawer	client/drawable_balls.c	/^static void ballDrawer(movable_item *mover,void *ptr)$/;"	f	file:
+ball_active	common/pong_dataStorage.h	/^    int ball_active;$/;"	m	struct:SBallData
+ball_amnt	common/pong_dataStorage.h	/^    unsigned int ball_amnt;$/;"	m	struct:SClientGameData
+ball_amnt	common/pong_dataStorage.h	/^    unsigned int ball_amnt;$/;"	m	struct:SGameData
+ball_baddle_speed_ratio	server/place_counter_thread.c	30;"	d	file:
+ballarray	client/pong_drawer.c	/^drawable_ball *ballarray[BALLS_MAX]={NULL};$/;"	v
+balldataArray	common/pong_dataStorage.h	/^    SBallData balldataArray[BALLS_MAX];$/;"	m	struct:SGameData
+base	common/id_fifo.h	/^    unsigned int base;$/;"	m	struct:SIdFifo
+clientIP	common/network_messages.h	/^    int clientIP;$/;"	m	struct:Snetw_ping_resp
+client_game_data	common/network_messages.h	/^    SClientGameData client_game_data;$/;"	m	struct:Snetw_game_start_msg
+client_game_data	common/network_messages.h	/^    SClientGameData client_game_data;$/;"	m	struct:Snetw_gamedata_update_msg
+client_main_draw_loop	client/pong_drawer.c	/^void *client_main_draw_loop(void *args)$/;"	f
+client_queue_add_data	client/pong_client_queue.c	/^int client_queue_add_data(SClientSendQueue *_this,void *data,size_t datasize)$/;"	f
+client_queue_init	client/pong_client_queue.c	/^int client_queue_init(SClientSendQueue *_this)$/;"	f
+clientaddr	server/pong_server_accept_client.h	/^    struct sockaddr_in clientaddr;$/;"	m	struct:SConnectionInfo	typeref:struct:SConnectionInfo::sockaddr_in
+clients_alive	common/pong_dataStorage.h	/^	unsigned int clients_alive;$/;"	m	struct:SGameData
+clients_alive	common/pong_dataStorage.h	/^    unsigned int clients_alive;$/;"	m	struct:SClientGameData
+clock_gettime	common/pong_misc_func.h	33;"	d
+color	client/drawable_balls.h	/^    unsigned int color;$/;"	m	struct:drawable_ball
+color	client/drawable_paddles.h	/^    unsigned int color;$/;"	m	struct:drawable_paddle
+color	client/drawable_text.h	/^    unsigned int color; \/\/check later how color is specified$/;"	m	struct:drawable_text
+condmutex	common/pong_queue.h	/^    pthread_mutex_t condmutex;$/;"	m	struct:SSendQueue
+condvar	common/pong_queue.h	/^    pthread_cond_t condvar;$/;"	m	struct:SSendQueue
+connInfoInit	server/pong_server_accept_client.c	/^void connInfoInit(SConnectionInfo *_this,SStartParams startparams)$/;"	f
+connect_to_server	client/pong_client_netwIF.c	/^SOCKET connect_to_server(char *ip, int port)$/;"	f
+create_items	client/pong_drawer.c	/^int create_items(drawable_items *item,SClientGameData *gameData)$/;"	f
+create_player_id	common/pong_dataStorage.c	/^unsigned int create_player_id(SGameData *gameData)$/;"	f
+create_updatemsg_from_gamedata	server/pong_server_accept_client.c	/^void create_updatemsg_from_gamedata(Snetw_gamedata_update_msg *msg,SGameData *gdata)$/;"	f
+current	common/pong_queue.h	/^    int current;$/;"	m	struct:SSendQueue
+currentNormalPlateSpeed	common/pong_dataStorage.h	/^    float currentNormalPlateSpeed;$/;"	m	struct:SGameData
+data	common/pong_dataStorage.h	/^    void *data;$/;"	m	struct:SDataDelivery
+data	common/pong_queue.h	/^    void *data;$/;"	m	struct:SQueueItem
+dataIsComing	common/pong_netw.c	/^EpongPollRetVal dataIsComing(SOCKET sock, unsigned long int tmo)$/;"	f
+dataNonBlockReceive	common/pong_netw.c	/^EPongRecvRet dataNonBlockReceive(SOCKET sock, void *buff,unsigned int size, int tmo)$/;"	f
+data_array	client/pong_client_queue.h	/^    SQueueItem data_array[QUEUELEN];$/;"	m	struct:SClientSendQueue
+data_array	common/pong_dataStorage.h	/^    SQueueItem data_array[SERVERQUEUELEN];$/;"	m	struct:SServerSendQueue
+datalistener	server/pong_server_accept_client.c	/^void * datalistener(void *arg)$/;"	f
+datasize	common/pong_dataStorage.h	/^    size_t datasize;$/;"	m	struct:SDataDelivery
+datasize	common/pong_queue.h	/^    size_t datasize;$/;"	m	struct:SQueueItem
+dbg_dataprint	common/pong_netw.c	/^void dbg_dataprint(void *data,size_t size,char *explanation,char *file, int line)$/;"	f
+dec_senderamnt	server/pong_server_queue.c	/^int dec_senderamnt(char *store)$/;"	f
+default_init_walldata	common/pong_dataStorage.c	/^int default_init_walldata(SGameData *gdata)$/;"	f
+direction	common/pong_dataStorage.h	/^        int direction;$/;"	m	struct:SPlateInfo
+direction_x	common/pong_dataStorage.h	/^    int direction_x;$/;"	m	struct:SBallData
+direction_y	common/pong_dataStorage.h	/^    int direction_y;$/;"	m	struct:SBallData
+drawFuncNotSet	client/pong_drawer.c	/^void drawFuncNotSet()$/;"	f
+draw_text	client/drawable_text.c	/^static void draw_text(movable_item *mover,void *ptr)$/;"	f	file:
+drawable_ball	client/drawable_balls.h	/^typedef struct drawable_ball$/;"	s
+drawable_ball	client/drawable_balls.h	/^}drawable_ball;$/;"	t	typeref:struct:drawable_ball
+drawable_ball_create	client/drawable_balls.c	/^drawable_ball *drawable_ball_create(unsigned int radius, FdrawFunc *fptrptr)$/;"	f
+drawable_ball_destroy	client/drawable_balls.c	/^void drawable_ball_destroy(drawable_ball **_this_)$/;"	f
+drawable_ball_updatedata	client/drawable_balls.c	/^int drawable_ball_updatedata(drawable_ball *_this,SBallData *bll)$/;"	f
+drawable_items	client/pong_drawer.h	/^typedef struct drawable_items$/;"	s
+drawable_items	client/pong_drawer.h	/^}drawable_items;$/;"	t	typeref:struct:drawable_items
+drawable_items_list_add_item	client/pong_drawer.c	/^drawable_items * drawable_items_list_add_item(drawable_items *list,size_t itsemstruct_size)$/;"	f
+drawable_items_list_get_first	client/pong_drawer.c	/^drawable_items *drawable_items_list_get_first(drawable_items *item)$/;"	f
+drawable_items_list_get_next	client/pong_drawer.c	/^drawable_items *drawable_items_list_get_next(drawable_items *item)$/;"	f
+drawable_items_list_get_prev	client/pong_drawer.c	/^drawable_items *drawable_items_list_get_prev(drawable_items *item)$/;"	f
+drawable_items_list_release_item	client/pong_drawer.c	/^void drawable_items_list_release_item(drawable_items *item,FdrawFunc drawFunc)$/;"	f
+drawable_items_list_remove_item	client/pong_drawer.c	/^void * drawable_items_list_remove_item(drawable_items *item)$/;"	f
+drawable_items_list_reserve_item_for_data	client/pong_drawer.c	/^void *drawable_items_list_reserve_item_for_data(drawable_items *item)$/;"	f
+drawable_paddle	client/drawable_paddles.h	/^typedef struct drawable_paddle$/;"	s
+drawable_paddle	client/drawable_paddles.h	/^}drawable_paddle;$/;"	t	typeref:struct:drawable_paddle
+drawable_paddle_create	client/drawable_paddles.c	/^drawable_paddle *drawable_paddle_create(unsigned int width,unsigned int height,unsigned int color, EWallPosition wall, FdrawFunc *fptrptr)$/;"	f
+drawable_paddle_destroy	client/drawable_paddles.c	/^void drawable_paddle_destroy(drawable_paddle **_this_)$/;"	f
+drawable_paddle_updatedata	client/drawable_paddles.c	/^int drawable_paddle_updatedata(drawable_paddle *_this,SPlateInfo *paddle)$/;"	f
+drawable_text	client/drawable_text.h	/^typedef struct drawable_text$/;"	s
+drawable_text	client/drawable_text.h	/^}drawable_text;$/;"	t	typeref:struct:drawable_text
+drawable_text_create	client/drawable_text.c	/^drawable_text *drawable_text_create(char *text,void *font,FdrawFunc *fptrPtr)$/;"	f
+drawable_text_set_fontopt	client/drawable_text.c	/^int drawable_text_set_fontopt(drawable_text *_this,void *font,int color)$/;"	f
+drawable_text_set_text	client/drawable_text.c	/^int drawable_text_set_text(drawable_text *_this,char *text)$/;"	f
+drawable_wall	client/drawable_walls.h	/^typedef struct drawable_wall$/;"	s
+drawable_wall	client/drawable_walls.h	/^}drawable_wall;$/;"	t	typeref:struct:drawable_wall
+drawable_wall_create	client/drawable_walls.c	/^drawable_wall *drawable_wall_create(SWallInfo *winfo, FdrawFunc *fptrptr)$/;"	f
+drawable_wall_destroy	client/drawable_walls.c	/^void drawable_wall_destroy(drawable_wall **_this_)$/;"	f
+drawable_wall_updatedata	client/drawable_walls.c	/^int drawable_wall_updatedata(drawable_wall *_this,SWallInfo *wll)$/;"	f
+drawfunc	client/pong_drawer.h	/^	FdrawFunc drawfunc;$/;"	m	struct:drawable_items
+drawitems_callback	client/pong_drawer.c	/^void drawitems_callback()$/;"	f
+drawitems_callback	client/test.c	/^void drawitems_callback(void)$/;"	f
+errors	server/pong_server_accept_client.h	/^	int errors;$/;"	m	struct:SConnectionInfo
+expected_msg_id	server/pong_server_accept_client.h	/^    int expected_msg_id;$/;"	m	struct:SConnectionInfo
+explode_playerId	common/pong_misc_func.c	/^void explode_playerId(int playerId, short *gameId, short *playerno)$/;"	f
+fast	common/pong_dataStorage.h	/^    int fast;$/;"	m	struct:SPlateSpecials
+fifopool_init	common/pong_IdFifo.c	/^void fifopool_init(SIdFifo *pool, unsigned int base, unsigned int id_amnt)$/;"	f
+fill_initial_gamedata	server/pong_server_accept_client.c	/^int fill_initial_gamedata(Snetw_game_start_msg *msg,SGameData *gameData)$/;"	f
+find_and_print_dublicates	common/pong_IdFifo.c	/^void find_and_print_dublicates(SIdFifo *pool)$/;"	f
+font	client/drawable_text.h	/^    void *font;  \/\/check later how font is specified$/;"	m	struct:drawable_text
+free	client/pong_drawer.h	/^    struct drawable_items *free;$/;"	m	struct:drawable_items	typeref:struct:drawable_items::drawable_items
+free_ids	common/id_fifo.h	/^    unsigned int free_ids[1];$/;"	m	struct:SIdFifo
+full	common/pong_queue.h	/^    int full;$/;"	m	struct:SSendQueue
+gameData	server/pong_server_accept_client.h	/^    SGameData *gameData;$/;"	m	struct:SConnectionInfo
+gameDataInited	common/pong_dataStorage.h	/^    unsigned char gameDataInited;$/;"	m	struct:SGameData
+gameDataLock	common/pong_dataStorage.h	/^    pthread_mutex_t gameDataLock;$/;"	m	struct:SGameData
+gameId	common/pong_dataStorage.h	/^    unsigned int gameId;$/;"	m	struct:SClientGameData
+gameId	common/pong_dataStorage.h	/^    unsigned int gameId;$/;"	m	struct:SGameData
+game_id	common/network_messages.h	/^	unsigned int game_id;$/;"	m	struct:Snetw_internal_msg_header
+game_id	common/pong_dataStorage.h	/^    unsigned int game_id;$/;"	m	struct:SHandshakeStatus
+game_id	server/pong_server_accept_client.h	/^    short game_id;$/;"	m	struct:SserverInternalClientData
+game_name	client/pong_client_netwIF.h	/^    char game_name[16];$/;"	m	struct:SClientStartArgs
+game_name	common/network_messages.h	/^    char game_name[GAME_NAME_MAX];$/;"	m	struct:Snetw_hello_from_client
+game_name	common/pong_dataStorage.h	/^    char game_name[GAME_NAME_MAX];$/;"	m	struct:SClientGameData
+game_name	common/pong_dataStorage.h	/^    char game_name[GAME_NAME_MAX];$/;"	m	struct:SGameData
+game_name	server/pong_server_accept_client.h	/^    char *game_name;$/;"	m	struct:SConnectionInfo
+game_passwd	common/pong_dataStorage.h	/^	char game_passwd[PASSWD_MAX];$/;"	m	struct:SGameData
+game_running	common/pong_dataStorage.h	/^    unsigned char game_running;$/;"	m	struct:SHandshakeStatus
+gamedata_lookup	common/pong_dataStorage.c	/^SGameData* gamedata_lookup(const char *game_name)$/;"	f
+gametype	server/serverStartup.h	/^    EGameType gametype;$/;"	m	struct:SStartParams
+genqueue	client/pong_client_queue.h	/^    SSendQueue genqueue;$/;"	m	struct:SClientSendQueue
+genqueue	common/pong_dataStorage.h	/^    SSendQueue genqueue;$/;"	m	struct:SServerSendQueue
+getClosestBall	common/pong_dataStorage.c	/^SBallData *getClosestBall(SGameData *gameData, SPlateInfo *pla)$/;"	f
+getX	client/movable_item.c	/^static float getX(movable_item *_this)$/;"	f	file:
+getX	client/movable_item.h	/^    get_coordF getX;$/;"	m	struct:movable_item
+getY	client/movable_item.c	/^static float getY(movable_item *_this)$/;"	f	file:
+getY	client/movable_item.h	/^    get_coordF getY;$/;"	m	struct:movable_item
+get_coordF	client/movable_item.h	/^typedef float (*get_coordF)(struct movable_item *);$/;"	t
+get_random_pos_at_area	common/pong_dataStorage.c	/^void get_random_pos_at_area(float *xpos, float *ypos, SGameArea *area)$/;"	f
+get_random_velocity	common/pong_dataStorage.c	/^void get_random_velocity(float *velocityX,float *velocityY,float maxVelocity,float minVelocity)$/;"	f
+get_random_velocity_1d	common/pong_dataStorage.c	/^float get_random_velocity_1d(float maxVelocity,float minVelocity)$/;"	f
+get_random_x_dir	common/pong_dataStorage.c	/^void get_random_x_dir(int *d)$/;"	f
+get_random_y_dir	common/pong_dataStorage.c	/^void get_random_y_dir(int *d)$/;"	f
+glutCreateMenu	freeglut/include/GL/freeglut_std.h	617;"	d
+glutCreateMenu_ATEXIT_HACK	freeglut/include/GL/freeglut_std.h	/^static int FGAPIENTRY FGUNUSED glutCreateMenu_ATEXIT_HACK(void (* func)(int)) { return __glutCreateMenuWithExit(func, exit); }$/;"	f
+glutCreateWindow	freeglut/include/GL/freeglut_std.h	615;"	d
+glutCreateWindow_ATEXIT_HACK	freeglut/include/GL/freeglut_std.h	/^static int FGAPIENTRY FGUNUSED glutCreateWindow_ATEXIT_HACK(const char *title) { return __glutCreateWindowWithExit(title, exit); }$/;"	f
+glutInit	freeglut/include/GL/freeglut_std.h	613;"	d
+glutInit_ATEXIT_HACK	freeglut/include/GL/freeglut_std.h	/^static void FGAPIENTRY FGUNUSED glutInit_ATEXIT_HACK(int *argcp, char **argv) { __glutInitWithExit(argcp, argv, exit); }$/;"	f
+godawfulwinsockinit	common/pong_misc_func.c	/^        void godawfulwinsockinit()$/;"	f
+godawfulwinsockinit	common/pong_misc_func.c	/^    void godawfulwinsockinit()$/;"	f
+handle_client_direction_change	server/pong_server_accept_client.c	/^void handle_client_direction_change(SConnectionInfo *_this)$/;"	f
+handle_gamedata_update	client/pong_client_netwIF.c	/^void handle_gamedata_update(void *data,size_t msgsize,SClientGameData *clidat)$/;"	f
+handle_ingame_servermsg	client/pong_client_netwIF.c	/^int handle_ingame_servermsg(void *data,size_t msgsize,SClientGameData *clidat)$/;"	f
+handshakeStatus	common/pong_dataStorage.h	/^    SHandshakeStatus handshakeStatus;$/;"	m	struct:SGameData
+head	client/pong_drawer.h	/^    struct drawable_items *head;$/;"	m	struct:drawable_items	typeref:struct:drawable_items::drawable_items
+height	client/drawable_paddles.h	/^    unsigned int height;$/;"	m	struct:drawable_paddle
+height	common/pong_dataStorage.h	/^    int height;$/;"	m	struct:SGameArea
+helloed	common/pong_dataStorage.h	/^    unsigned char helloed;$/;"	m	struct:SHandshakeStatus
+home	client/drawable_walls.h	/^    EWallPosition home;$/;"	m	struct:drawable_wall
+host_game	client/pong_client_netwIF.h	/^    int host_game;$/;"	m	struct:SClientStartArgs
+id	server/pong_server_accept_client.h	/^    short id;$/;"	m	struct:SserverInternalClientData
+idpoolLock	common/id_fifo.h	/^    pthread_mutex_t idpoolLock;$/;"	m	struct:SIdFifo
+idpool_idRelease	common/pong_IdFifo.c	/^void idpool_idRelease(SIdFifo *pool,unsigned int id)$/;"	f
+idpool_idReserve	common/pong_IdFifo.c	/^unsigned int idpool_idReserve(SIdFifo *pool)$/;"	f
+idpool_uninit	common/pong_IdFifo.c	/^void idpool_uninit(SIdFifo *pool)$/;"	f
+infoinitF	server/pong_server_accept_client.h	/^    FInitInfo infoinitF;$/;"	m	struct:SConnectionInfo
+infouninitF	server/pong_server_accept_client.h	/^    FUninitInfo infouninitF;$/;"	m	struct:SConnectionInfo
+ingameloop	client/pong_client_netwIF.c	/^void *ingameloop(void *arg)$/;"	f
+initBasicGame	server/pong_server_accept_client.c	/^void initBasicGame(SConnectionInfo *_this)$/;"	f
+init_and_launch_maindrawer	client/pong_drawer.c	/^int init_and_launch_maindrawer(SClientGameData *gameData, pthread_t *mainDrawLoopId)$/;"	f
+init_ballslot	common/pong_dataStorage.c	/^int init_ballslot(SGameData *gdata,int ballindex,float maxVelocity,float minVelocity)$/;"	f
+init_dataStorage	common/pong_dataStorage.c	/^void init_dataStorage()$/;"	f
+init_dataStorageForGame	common/pong_dataStorage.c	/^SGameData* init_dataStorageForGame(const char *game_name)$/;"	f
+init_data_recvd	common/pong_dataStorage.h	/^    unsigned char init_data_recvd;$/;"	m	struct:SHandshakeStatus
+init_drawable_items_list	client/pong_drawer.c	/^void init_drawable_items_list(drawable_items *item)$/;"	f
+init_gamedata_mutexes	common/pong_dataStorage.c	/^void init_gamedata_mutexes(SGameData* gameData)$/;"	f
+init_globals	client/pong_client_starter.c	/^void init_globals()$/;"	f
+init_movable	client/movable_item.c	/^int init_movable(movable_item *_this)$/;"	f
+init_plate	common/pong_dataStorage.c	/^int init_plate(SGameData *gameData, SPlateInfo *pla)$/;"	f
+init_queue	common/pong_queue.c	/^int init_queue(SSendQueue *_this)$/;"	f
+int_64	common/definitions.h	/^typedef long long int int_64;$/;"	t
+ip	server/pong_server_accept_client.h	/^    char ip[16];$/;"	m	struct:SserverInternalClientData
+item	client/pong_drawer.h	/^    void *item;$/;"	m	struct:drawable_items
+item_id	client/pong_drawer.h	/^    int item_id;$/;"	m	struct:drawable_items
+itemlock	client/pong_drawer.h	/^    pthread_mutex_t itemlock;$/;"	m	struct:drawable_items
+join_req_recvd	common/pong_dataStorage.h	/^    unsigned char join_req_recvd;$/;"	m	struct:SHandshakeStatus
+last	common/pong_queue.h	/^    int last;$/;"	m	struct:SSendQueue
+launch_timerthread	server/place_counter_thread.c	/^EPongRet launch_timerthread(SGameData *gameData)$/;"	f
+lbat	common/definitions.h	137;"	d
+len	client/drawable_text.h	/^    size_t len;$/;"	m	struct:drawable_text
+lives	common/pong_dataStorage.h	/^    unsigned int lives;$/;"	m	struct:SPlayerData
+main	client/pong_client_starter.c	/^int main( int argc, char *argv[])$/;"	f
+main	client/test.c	/^int main(int argc, char *argv[])$/;"	f
+main	server/serverStartup.c	/^int main()$/;"	f
+message	common/network_messages.h	/^    char message[50];$/;"	m	struct:Snetw_game_kill_msg
+mode	common/pong_dataStorage.h	/^    int mode;$/;"	m	struct:SDataDelivery
+movable_item	client/movable_item.h	/^typedef struct movable_item$/;"	s
+movable_item	client/movable_item.h	/^}movable_item;$/;"	t	typeref:struct:movable_item
+mover	client/pong_drawer.h	/^    movable_item mover;$/;"	m	struct:drawable_items
+msg	server/pong_server_accept_client.h	/^    void *msg;$/;"	m	struct:SConnectionInfo
+msgSize	common/network_messages.h	/^    size_t msgSize;$/;"	m	struct:Snetw_internal_msg_header
+msgSize	common/network_messages.h	/^    size_t msgSize;$/;"	m	struct:Snetw_ping_req
+msgSize	common/network_messages.h	/^    size_t msgSize;$/;"	m	struct:Snetw_ping_resp
+msg_create	common/pong_netw.c	/^void * msg_create(unsigned int game_id, unsigned int receiver_id, unsigned int own_id, int MSG_ID, size_t msg_size)$/;"	f
+msg_free	common/pong_netw.c	/^void msg_free(void **msg)$/;"	f
+msg_getGameId	common/pong_netw.c	/^int msg_getGameId(void *buff)$/;"	f
+msg_getId	common/pong_netw.c	/^unsigned int msg_getId(void *buff)$/;"	f
+msg_getReceiver	common/pong_netw.c	/^unsigned int msg_getReceiver(void *replymsg)$/;"	f
+msg_getSender	common/pong_netw.c	/^unsigned int msg_getSender(void *replymsg)$/;"	f
+msg_getSize	common/pong_netw.c	/^int msg_getSize(void *buff)$/;"	f
+msg_id	common/network_messages.h	/^    int msg_id;$/;"	m	struct:Snetw_internal_msg_header
+msg_receive	common/pong_netw.c	/^void *msg_receive(SOCKET sock,int tmo,EPongRecvRet *status)$/;"	f
+msg_send	common/pong_netw.c	/^EPongRet msg_send(SOCKET sock, void *msg, size_t msgsize)$/;"	f
+mva_gettime	common/pong_misc_func.c	/^    void mva_gettime(struct timespec *tm)$/;"	f
+myplayer_index	common/pong_dataStorage.h	/^    unsigned int myplayer_index;$/;"	m	struct:SClientGameData
+netw_client_hello_send	client/pong_client_netwIF.c	/^EPongRet netw_client_hello_send( char *game_name, int *num_of_players, int *game_id, int initiator, int *ownId)$/;"	f
+new_sock_conn	server/pong_server_accept_client.c	/^void new_sock_conn(SOCKET sock,struct sockaddr_in their_addr)$/;"	f
+newdirection	common/network_messages.h	/^    int newdirection;$/;"	m	struct:Snetw_client_dir_change_pressed_msg
+next	client/pong_drawer.h	/^	struct drawable_items *next;$/;"	m	struct:drawable_items	typeref:struct:drawable_items::drawable_items
+next	common/id_fifo.h	/^    unsigned int next;$/;"	m	struct:SIdFifo
+num_of_players	common/network_messages.h	/^    int num_of_players;$/;"	m	struct:Snetw_hello_full_resp
+num_of_players	server/pong_server_accept_client.h	/^    short num_of_players;$/;"	m	struct:SserverInternalClientData
+number_of_players	common/network_messages.h	/^    int number_of_players;$/;"	m	struct:Snetw_game_init_req
+origColor	client/drawable_paddles.h	/^    unsigned int origColor;$/;"	m	struct:drawable_paddle
+other_player_ids	server/pong_server_accept_client.h	/^    short other_player_ids[3];$/;"	m	struct:SserverInternalClientData
+own_id	client/pong_client_netwIF.c	/^static int own_id;$/;"	v	file:
+own_player_id	server/pong_server_accept_client.h	/^    unsigned int own_player_id;$/;"	m	struct:SConnectionInfo
+own_playerdata_index	server/pong_server_accept_client.h	/^    unsigned int own_playerdata_index;$/;"	m	struct:SConnectionInfo
+paddleDrawer	client/drawable_paddles.c	/^static void paddleDrawer(movable_item *mover,void *ptr)$/;"	f	file:
+paddle_start_color	client/drawable_paddles.c	/^const unsigned paddle_start_color[4]=$/;"	v
+parseAndReplyHelloMsg	server/pong_server_accept_client.c	/^EPongRet parseAndReplyHelloMsg( SConnectionInfo *_this)$/;"	f
+parsehelloF	server/pong_server_accept_client.h	/^    FHelloParse parsehelloF;$/;"	m	struct:SConnectionInfo
+parseinitF	server/pong_server_accept_client.h	/^    FInitParse  parseinitF;$/;"	m	struct:SConnectionInfo
+parsejoinreqF	server/pong_server_accept_client.h	/^    FJoinreqParse parsejoinreqF;$/;"	m	struct:SConnectionInfo
+passw_errors	common/pong_dataStorage.h	/^    unsigned int passw_errors;$/;"	m	struct:SHandshakeStatus
+passwd	common/network_messages.h	/^    char passwd[PASSWD_MAX]; \/\/I'd rather not use placeholder since it spoils the sizeof usage.$/;"	m	struct:Snetw_game_init_req
+passwd	common/network_messages.h	/^    char passwd[PASSWD_MAX];$/;"	m	struct:Snetw_game_join_req
+peek_server_for_gameupdate	client/pong_client_netwIF.c	/^int peek_server_for_gameupdate(SClientSendQueue *rxqueue,SClientGameData *clidat)$/;"	f
+plate	common/pong_dataStorage.h	/^    SPlateInfo plate;$/;"	m	struct:SPlayerData
+playerDataLock	common/pong_dataStorage.h	/^    pthread_mutex_t playerDataLock;$/;"	m	struct:SPlayerData
+playerIdFiFO	common/pong_dataStorage.h	/^    SIdFifo *playerIdFiFO; $/;"	m	struct:SGameData
+playerIdToGameId	common/pong_misc_func.c	/^short playerIdToGameId(int playerId)$/;"	f
+playerIdToNo	common/pong_misc_func.c	/^short playerIdToNo(int playerId)$/;"	f
+playerName	common/pong_dataStorage.h	/^    char playerName[PLAYER_NAME_MAX];  \/\/for sending this needs to be char playername[name_max]$/;"	m	struct:SPlayerData
+player_alive	common/pong_dataStorage.h	/^	int player_alive;$/;"	m	struct:SPlayerData
+player_amnt	common/pong_dataStorage.h	/^    unsigned char player_amnt;$/;"	m	struct:SGameData
+player_amnt	common/pong_dataStorage.h	/^    unsigned int player_amnt;$/;"	m	struct:SClientGameData
+player_has_joined	common/pong_dataStorage.h	/^    int player_has_joined;$/;"	m	struct:SPlayerData
+player_init	common/pong_dataStorage.c	/^int player_init(SGameData *gameData,SPlayerData *pl,char *player_name)$/;"	f
+player_name	common/network_messages.h	/^    char player_name[PLAYER_NAME_MAX];$/;"	m	struct:Snetw_game_join_req
+player_name	common/network_messages.h	/^    char player_name[PLAYER_NAME_MAX];$/;"	m	struct:Snetw_game_join_resp
+player_no	common/pong_dataStorage.h	/^    int player_no;$/;"	m	struct:SDataDelivery
+playeramntmutex	server/pong_server_accept_client.c	/^static pthread_mutex_t playeramntmutex=PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+playerdata_get	common/pong_dataStorage.c	/^SPlayerData *playerdata_get(unsigned int gameId, unsigned int player_id)$/;"	f
+players	common/pong_dataStorage.h	/^    SPlayerData players[CLIENTS_MAX];$/;"	m	struct:SClientGameData
+players	common/pong_dataStorage.h	/^    SPlayerData players[CLIENTS_MAX];$/;"	m	struct:SGameData
+players_joined	common/pong_dataStorage.h	/^	unsigned char players_joined;$/;"	m	struct:SGameData
+poll_clientaction_endsend	client/pong_client_queue.c	/^int poll_clientaction_endsend(SClientSendQueue *_this)$/;"	f
+poll_clientaction_getdata	client/pong_client_queue.c	/^void *poll_clientaction_getdata(SClientSendQueue *_this, size_t *msgsize)$/;"	f
+poll_clientaction_startsend	client/pong_client_queue.c	/^int poll_clientaction_startsend(SClientSendQueue *_this)$/;"	f
+poll_clientaction_to_send	client/pong_client_queue.c	/^int poll_clientaction_to_send(SClientSendQueue *_this, unsigned int timeout)$/;"	f
+poll_serverdata_to_send	server/pong_server_queue.c	/^int poll_serverdata_to_send(SServerSendQueue *_this, unsigned int timeout)$/;"	f
+pong_Basic_infouninitF	server/pong_server_accept_client.c	/^void pong_Basic_infouninitF(SConnectionInfo *_this)$/;"	f
+pong_Basic_parsehelloF	server/pong_server_accept_client.c	/^EPongRet pong_Basic_parsehelloF(void *opaque)$/;"	f
+pong_Basic_parseinitF	server/pong_server_accept_client.c	/^EPongRet pong_Basic_parseinitF(void *opaque)$/;"	f
+pong_Basic_parsejoinreqF	server/pong_server_accept_client.c	/^EPongRet pong_Basic_parsejoinreqF(void *opaque)$/;"	f
+pong_Basic_waitAllJoinAndSendF	server/pong_server_accept_client.c	/^EPongRet pong_Basic_waitAllJoinAndSendF(void *opaque)$/;"	f
+pong_assert	common/pong_assert.h	26;"	d
+pong_delay	common/pong_misc_func.c	/^void pong_delay(uint_64 delay_msec)$/;"	f
+pong_initiate_game	client/pong_client_netwIF.c	/^EPongRet pong_initiate_game(int game_id, int players, char passwd[15])$/;"	f
+pong_join_inited_game	client/pong_client_netwIF.c	/^EPongRet pong_join_inited_game(int game_id, char *player_name, char *passwd )$/;"	f
+pong_sock_close	common/definitions.h	29;"	d
+pong_sock_close	common/definitions.h	37;"	d
+pong_wait_game_start	client/pong_client_netwIF.c	/^EPongRet pong_wait_game_start(Snetw_game_start_msg *gameStartInfo)$/;"	f
+pos	server/pong_server_accept_client.h	/^    EWallPosition pos;$/;"	m	struct:SserverInternalClientData
+prev	client/pong_drawer.h	/^	struct drawable_items *prev;$/;"	m	struct:drawable_items	typeref:struct:drawable_items::drawable_items
+queue_getdata_internal	common/pong_queue.c	/^static void *queue_getdata_internal(SSendQueue *_this,SQueueItem* array,size_t *msgsize, size_t offset, unsigned int queuesize)$/;"	f	file:
+queue_getrxdata	common/pong_queue.c	/^void *queue_getrxdata(SSendQueue *_this,SQueueItem* array,size_t *msgsize ,unsigned int queuelen)$/;"	f
+queue_gettxdata	common/pong_queue.c	/^void *queue_gettxdata(SSendQueue *_this,SQueueItem* array,size_t *msgsize ,unsigned int queuelen)$/;"	f
+queue_lock	common/pong_queue.c	/^static int queue_lock(SSendQueue *_this,size_t mutexoffset)$/;"	f	file:
+queue_lock_rx	common/pong_queue.c	/^int queue_lock_rx(SSendQueue *_this)$/;"	f
+queue_lock_tx	common/pong_queue.c	/^int queue_lock_tx(SSendQueue *_this)$/;"	f
+queue_peek_txdata	common/pong_queue.c	/^int queue_peek_txdata(SSendQueue *_this,unsigned int queuesize)$/;"	f
+queue_poll	common/pong_queue.c	/^int queue_poll(SSendQueue *_this, unsigned int timeout)$/;"	f
+queue_rx_add_unsafe	common/pong_queue.c	/^int queue_rx_add_unsafe(SSendQueue *_this,unsigned int queuelen)$/;"	f
+queue_rx_lock_if_space	common/pong_queue.c	/^int queue_rx_lock_if_space(SSendQueue *_this)$/;"	f
+queue_rxfull	common/pong_queue.c	/^int queue_rxfull(SSendQueue *_this)$/;"	f
+queue_signal	common/pong_queue.c	/^void queue_signal(SSendQueue *_this)$/;"	f
+queue_tx_add_unsafe	common/pong_queue.c	/^int queue_tx_add_unsafe(SSendQueue *_this,unsigned int queuelen)$/;"	f
+queue_tx_lock_if_space	common/pong_queue.c	/^int queue_tx_lock_if_space(SSendQueue *_this)$/;"	f
+queue_txdata_consumed	common/pong_queue.c	/^void queue_txdata_consumed(SSendQueue *_this,unsigned int queuesize)$/;"	f
+queue_txfull	common/pong_queue.c	/^int queue_txfull(SSendQueue *_this)$/;"	f
+queue_unlock	common/pong_queue.c	/^static int queue_unlock(SSendQueue *_this,size_t mutexoffset)$/;"	f	file:
+queue_unlock_rx	common/pong_queue.c	/^int queue_unlock_rx(SSendQueue *_this)$/;"	f
+queue_unlock_tx	common/pong_queue.c	/^int queue_unlock_tx(SSendQueue *_this)$/;"	f
+queuemutex	common/pong_queue.h	/^    pthread_mutex_t queuemutex;$/;"	m	struct:SSendQueue
+rbat	common/definitions.h	138;"	d
+reason	common/network_messages.h	/^    unsigned int reason;$/;"	m	struct:Snetw_game_kill_msg
+receiver_id	common/network_messages.h	/^    unsigned int receiver_id; \/\/ints are better??$/;"	m	struct:Snetw_internal_msg_header
+req_init_data	common/network_messages.h	/^    int req_init_data;$/;"	m	struct:Snetw_hello_full_resp
+req_init_data	common/network_messages.h	/^    int req_init_data;$/;"	m	struct:Snetw_hello_short_resp
+reshape_callback	client/pong_drawer.c	/^void reshape_callback(int width, int height)$/;"	f
+rx_client_queue_add_data	client/pong_client_queue.c	/^int rx_client_queue_add_data(SClientSendQueue *_this,void *data,size_t datasize)$/;"	f
+rx_poll_clientaction_endsend	client/pong_client_queue.c	/^int rx_poll_clientaction_endsend(SClientSendQueue *_this)$/;"	f
+rx_poll_clientaction_getdata	client/pong_client_queue.c	/^void *rx_poll_clientaction_getdata(SClientSendQueue *_this, size_t *msgsize)$/;"	f
+rx_poll_clientaction_startsend	client/pong_client_queue.c	/^int rx_poll_clientaction_startsend(SClientSendQueue *_this)$/;"	f
+rxcurrent	common/pong_queue.h	/^    int rxcurrent;$/;"	m	struct:SSendQueue
+rxdata_array	client/pong_client_queue.h	/^    SQueueItem rxdata_array[RX_QUEUELEN];$/;"	m	struct:SClientSendQueue
+rxdata_array	common/pong_dataStorage.h	/^    SQueueItem rxdata_array[SERVER_RX_QUEUELEN];$/;"	m	struct:SServerSendQueue
+rxfull	common/pong_queue.h	/^    int rxfull;$/;"	m	struct:SSendQueue
+rxlast	common/pong_queue.h	/^    int rxlast;$/;"	m	struct:SSendQueue
+rxqueuemutex	common/pong_queue.h	/^    pthread_mutex_t rxqueuemutex;$/;"	m	struct:SSendQueue
+schedfunc	server/place_counter_thread.c	/^static void * schedfunc(void *arg)$/;"	f	file:
+send_clientaction	client/pong_client_netwIF.c	/^int send_clientaction(SClientSendQueue *sendqueue)$/;"	f
+send_stop_to_client	server/pong_server_accept_client.c	/^void send_stop_to_client(SConnectionInfo *_this)$/;"	f
+send_to_clients	server/pong_server_accept_client.c	/^void send_to_clients(SGameData *gameData)$/;"	f
+sender_id	common/network_messages.h	/^    unsigned int sender_id; \/\/ints are better??$/;"	m	struct:Snetw_internal_msg_header
+serverIP	common/network_messages.h	/^    int serverIP;$/;"	m	struct:Snetw_ping_req
+serverId	client/pong_client_netwIF.c	/^static int serverId;$/;"	v	file:
+server_data_free	server/pong_server_queue.c	/^void server_data_free(void *data)$/;"	f
+server_gametime	common/network_messages.h	/^    unsigned long long server_gametime;        $/;"	m	struct:Snetw_ping_req
+server_gametime	common/network_messages.h	/^    unsigned long long server_gametime;        $/;"	m	struct:Snetw_ping_resp
+server_lock_tx	server/pong_server_queue.c	/^int server_lock_tx(SServerSendQueue *_this)$/;"	f
+server_queue_add_tx_data	server/pong_server_queue.c	/^int server_queue_add_tx_data(SServerSendQueue *_this,void *data,size_t datasize,unsigned char senderamnt)$/;"	f
+server_queue_get_tx_data	server/pong_server_queue.c	/^void *server_queue_get_tx_data(SServerSendQueue *_this, size_t *datalen,int *imlast)$/;"	f
+server_queue_init	server/pong_server_queue.c	/^int server_queue_init(SServerSendQueue *_this)$/;"	f
+server_startup_hooks	server/serverStartup.c	/^void server_startup_hooks()$/;"	f
+server_unlock_tx	server/pong_server_queue.c	/^int server_unlock_tx(SServerSendQueue *_this)$/;"	f
+serverip	client/pong_client_netwIF.h	/^    char serverip[16];$/;"	m	struct:SClientStartArgs
+serverqueue	common/pong_dataStorage.h	/^    SServerSendQueue serverqueue;$/;"	m	struct:SGameData
+set_position	client/movable_item.c	/^static int set_position(movable_item *_this,float x,float y,float z)$/;"	f	file:
+set_position	client/movable_item.h	/^    set_positionF set_position;$/;"	m	struct:movable_item
+set_positionF	client/movable_item.h	/^typedef int (*set_positionF)(struct movable_item *_this,float x,float y,float z);$/;"	t
+set_velocity	client/movable_item.c	/^static int set_velocity(movable_item *_this,float x,float y,float z)$/;"	f	file:
+set_velocity	client/movable_item.h	/^    set_velocityF set_velocity;$/;"	m	struct:movable_item
+set_velocityF	client/movable_item.h	/^typedef int (*set_velocityF)(struct movable_item *_this,float x,float y,float z);$/;"	t
+signal_sender	client/pong_client_queue.c	/^void signal_sender(SClientSendQueue *_this)$/;"	f
+size	client/drawable_balls.h	/^    unsigned int size;$/;"	m	struct:drawable_ball
+sleep	common/definitions.h	31;"	d
+sock	client/pong_client_netwIF.c	/^static SOCKET sock;$/;"	v	file:
+sock	common/pong_dataStorage.h	/^	SOCKET sock;$/;"	m	struct:SPlayerData
+sock	server/pong_server_accept_client.h	/^    SOCKET sock;$/;"	m	struct:SConnectionInfo
+special	common/pong_dataStorage.h	/^    int special;$/;"	m	struct:SBallData
+specials	client/drawable_paddles.h	/^    SPlateSpecials specials;$/;"	m	struct:drawable_paddle
+specials	common/pong_dataStorage.h	/^        SPlateSpecials specials;$/;"	m	struct:SPlateInfo
+speed	common/pong_dataStorage.h	/^        float speed;$/;"	m	struct:SPlateInfo
+speed_x	common/pong_dataStorage.h	/^    float speed_x; \/* velocity value == 1 \/ (virtual pixels\/micosecond) $/;"	m	struct:SBallData
+speed_y	common/pong_dataStorage.h	/^    float speed_y; \/* (virtual pixels\/micosecond) *\/$/;"	m	struct:SBallData
+speedx	client/movable_item.h	/^    float speedx;$/;"	m	struct:movable_item
+speedy	client/movable_item.h	/^    float speedy;$/;"	m	struct:movable_item
+speedz	client/movable_item.h	/^    float speedz; \/\/maybe we wan't the text to fade to distance$/;"	m	struct:movable_item
+start_server	server/serverStartup.c	/^EPongRet start_server()$/;"	f
+startup_ticker_thread	server/pong_server_accept_client.c	/^EPongRet startup_ticker_thread(SConnectionInfo *_this)$/;"	f
+stop_game	server/pong_server_accept_client.c	/^void stop_game(SConnectionInfo *_this,int reason,char *reasonmsg)$/;"	f
+stuck	common/pong_dataStorage.h	/^    int stuck;$/;"	m	struct:SPlateSpecials
+success_code	common/network_messages.h	/^    int success_code;$/;"	m	struct:Snetw_game_init_resp
+success_code	common/network_messages.h	/^    int success_code;$/;"	m	struct:Snetw_game_join_resp
+text	client/drawable_text.h	/^    char *text;$/;"	m	struct:drawable_text
+textset	client/drawable_text.h	/^    unsigned int textset;$/;"	m	struct:drawable_text
+ticker_thread	server/pong_server_accept_client.c	/^void * ticker_thread(void *arg)$/;"	f
+time_from_gamestart	common/network_messages.h	/^    unsigned long long time_from_gamestart; $/;"	m	struct:Snetw_client_dir_change_pressed_msg
+time_from_gamestart	common/network_messages.h	/^    unsigned long long time_from_gamestart; \/* currently unused, may be needed in future *\/$/;"	m	struct:Snetw_gamedata_update_msg
+trid	common/network_messages.h	/^    unsigned int trid;$/;"	m	struct:Snetw_ping_req
+trid	common/network_messages.h	/^    unsigned int trid;$/;"	m	struct:Snetw_ping_resp
+type	client/drawable_walls.h	/^    EWallType type;$/;"	m	struct:drawable_wall
+type	common/pong_dataStorage.h	/^    EWallType type;$/;"	m	struct:SWallInfo
+uint_64	common/definitions.h	/^typedef unsigned long long int uint_64;$/;"	t
+uninit_ballslot	common/pong_dataStorage.c	/^void uninit_ballslot(SBallData *bdata)$/;"	f
+userId	common/pong_dataStorage.h	/^    unsigned int userId;$/;"	m	struct:SPlayerData
+waitAllJoinAndSendF	server/pong_server_accept_client.h	/^    FwaitAllJoinAndSend waitAllJoinAndSendF;$/;"	m	struct:SConnectionInfo
+wall	client/drawable_paddles.h	/^    EWallPosition wall;$/;"	m	struct:drawable_paddle
+wall	common/pong_dataStorage.h	/^        EWallPosition wall;$/;"	m	struct:SPlateInfo
+wallDrawer	client/drawable_walls.c	/^static void wallDrawer(movable_item *mover,void *ptr)$/;"	f	file:
+wallarray	client/pong_drawer.c	/^drawable_wall *wallarray[4]={NULL};$/;"	v
+walls	common/pong_dataStorage.h	/^    SWallInfo walls[4];$/;"	m	struct:SClientGameData
+walls	common/pong_dataStorage.h	/^    SWallInfo walls[4];$/;"	m	struct:SGameData
+wide	common/pong_dataStorage.h	/^    int wide;$/;"	m	struct:SPlateSpecials
+width	client/drawable_paddles.h	/^    unsigned int width;$/;"	m	struct:drawable_paddle
+width	common/pong_dataStorage.h	/^        int width;$/;"	m	struct:SPlateInfo
+width	common/pong_dataStorage.h	/^    int width;$/;"	m	struct:SGameArea
+wpos	common/pong_dataStorage.h	/^    EWallPosition wpos;$/;"	m	struct:SWallInfo
+x	common/pong_dataStorage.h	/^        float x;$/;"	m	struct:SPlateInfo
+xpos	client/movable_item.h	/^    float xpos;$/;"	m	struct:movable_item
+xpos	common/pong_dataStorage.h	/^    float xpos; \/* position in virtual coord - sized as DEFAULT_AREA_WIDTH *\/$/;"	m	struct:SBallData
+y	common/pong_dataStorage.h	/^        float y;$/;"	m	struct:SPlateInfo
+ypos	client/movable_item.h	/^    float ypos;$/;"	m	struct:movable_item
+ypos	common/pong_dataStorage.h	/^    float ypos; \/* DEFAULT_AREA_HEIGHT *\/$/;"	m	struct:SBallData
+z	common/pong_dataStorage.h	/^        float z;$/;"	m	struct:SPlateInfo
+zpos	client/movable_item.h	/^    float zpos; \/\/maybe we wan't the text to fade to distance$/;"	m	struct:movable_item
